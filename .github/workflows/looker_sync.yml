@@ -42,8 +42,4 @@ jobs:
 
       - name: Sync Content
         run: |
-          # 1. Export from Prod to a local folder on the VM
-          ldeploy content export --env prod --folders 1 --local-target ./sync_data
-          
-          # 2. Import from that folder to Dev
-          ldeploy content import --env dev --folders ./sync_data --recursive
+          ldeploy content export --env prod --folders 15 --local-target ./sync_data
