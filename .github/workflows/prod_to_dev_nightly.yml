@@ -2,8 +2,8 @@ name: Prod to Dev Nightly
 
 on:
   schedule:
-    # This runs at 00:00 UTC every day
-    - cron: '0 0 * * *'
+    # This triggers at 05:00 UTC (12:00 AM EST)
+    - cron: '0 5 * * *'
   workflow_dispatch: 
 
 jobs:
