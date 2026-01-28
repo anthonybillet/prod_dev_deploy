@@ -32,7 +32,7 @@ jobs:
           pip install looker-deployer
 
       - name: Create looker.ini
-        # This creates the config file in the current directory on the VM
+        # This creates the config file in the current directory on the VM and pulls from secrets
         run: |
           cat <<EOT > looker.ini
           [dev]
@@ -49,10 +49,17 @@ jobs:
           EOT
 
       - name: Sync Content
+      # This use Ldeploy to first export the current state of dev and prod, then overwrite the dashboards in dev with the latest changes from prod
         run: |
+          # export the state of the folder and dashboards from prod
           ldeploy content export --env prod --folders 15 --local-target ./prod
 
+          # export the state of the folder and dashboards from dev
           ldeploy content export --env dev --folders 14 --local-target ./dev
+
+          # import and overwrite the changes made from prod Looker to the dev Looker
+          ldeploy content import --env dev --folders "./prod/Shared/Data Security: Shared Folder For All" --recursive --target-folder "Shared/Data Security: Shared Folder For All"
+
 
       - name: Commit and Push changes
         run: |
@@ -60,7 +67,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # Add the exported JSON files
+          # commit the JSON file representations of the prod and dev folders and dashboards to git so we have version control
           git add ./prod
           git add ./dev
           
