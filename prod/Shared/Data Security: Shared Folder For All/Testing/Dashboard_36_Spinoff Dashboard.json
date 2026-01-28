@@ -1,0 +1,1720 @@
+{
+  "content_metadata_id": "68",
+  "description": "",
+  "hidden": false,
+  "query_timezone": null,
+  "readonly": false,
+  "refresh_interval": null,
+  "refresh_interval_to_i": null,
+  "title": "Spinoff Dashboard",
+  "user_id": "1",
+  "slug": "iXwvkSLZUoGBR6nViUBOg3",
+  "preferred_viewer": "dashboards-next",
+  "alert_sync_with_dashboard_filter_enabled": false,
+  "background_color": null,
+  "created_at": "2026-01-27 16:47:12 UTC",
+  "crossfilter_enabled": true,
+  "dashboard_elements": [
+    {
+      "body_text": null,
+      "body_text_as_html": null,
+      "dashboard_id": "36",
+      "dashboard_layout_id": null,
+      "edit_uri": null,
+      "id": "297",
+      "look": null,
+      "look_id": null,
+      "lookml_link_id": "",
+      "merge_result_id": null,
+      "note_display": null,
+      "note_state": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "query": {
+        "view": "order_items",
+        "fields": [
+          "order_items.total_sale_price",
+          "order_items.created_date"
+        ],
+        "pivots": null,
+        "fill_fields": [
+          "order_items.created_date"
+        ],
+        "filters": {
+          "order_items.created_date": "365 days"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "order_items.created_date desc"
+        ],
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "vis_config": {
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "plot_size_by_field": false,
+          "trellis": "",
+          "stacking": "",
+          "limit_displayed_rows": false,
+          "legend_position": "center",
+          "point_style": "none",
+          "show_value_labels": false,
+          "label_density": 25,
+          "x_axis_scale": "auto",
+          "y_axis_combined": true,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "show_null_points": true,
+          "interpolation": "linear",
+          "type": "looker_column",
+          "defaults_version": 1,
+          "series_types": {
+          }
+        },
+        "filter_config": {
+          "order_items.created_date": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "365",
+                  "unit": "day"
+                },
+                {
+                }
+              ],
+              "id": 3
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "y4mvF5xYF3gqpZCxVZzDCGx8vkN353yR",
+        "client_id": "4R4QSE3gLyHR4gbszRQNHG",
+        "share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/x/4R4QSE3gLyHR4gbszRQNHG",
+        "expanded_share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A3%7D%5D%7D&origin=share-expanded",
+        "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A3%7D%5D%7D",
+        "has_table_calculations": false,
+        "id": "y4mvF5xYF3gqpZCxVZzDCGx8vkN353yR",
+        "model": "external_data_model",
+        "limit": "500",
+        "column_limit": "50",
+        "dynamic_fields": null,
+        "query_timezone": null,
+        "quick_calcs": null,
+        "analysis_config": null,
+        "can": {
+          "can_clear_cache": true,
+          "cost_estimate": true,
+          "create": true,
+          "index": true,
+          "show": true,
+          "download": true,
+          "download_unlimited": true,
+          "edit_custom_fields": true,
+          "edit_table_calculations": true,
+          "explore": true,
+          "generate_drill_links": true,
+          "render": true,
+          "run": true,
+          "see_results": true,
+          "save": true,
+          "schedule": true,
+          "see_aggregate_table_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_lookml": true,
+          "see_sql": true,
+          "send_all_results": true,
+          "use_custom_fields": true
+        }
+      },
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "result_maker_id": "203",
+      "subtitle_text": null,
+      "title": "Daily Sales",
+      "title_hidden": false,
+      "title_text": null,
+      "type": "vis",
+      "alert_count": 0,
+      "rich_content_json": null,
+      "title_text_as_html": null,
+      "subtitle_text_as_html": null,
+      "extension_id": null,
+      "aria_description": null,
+      "query_id": "y4mvF5xYF3gqpZCxVZzDCGx8vkN353yR",
+      "result_maker": {
+        "id": "203",
+        "dynamic_fields": null,
+        "sorts": [
+          "order_items.created_date desc"
+        ],
+        "merge_result_id": null,
+        "total": false,
+        "sql_query_id": "",
+        "query": {
+          "view": "order_items",
+          "fields": [
+            "order_items.total_sale_price",
+            "order_items.created_date"
+          ],
+          "pivots": null,
+          "fill_fields": [
+            "order_items.created_date"
+          ],
+          "filters": {
+            "order_items.created_date": "365 days"
+          },
+          "filter_expression": null,
+          "sorts": [
+            "order_items.created_date desc"
+          ],
+          "total": null,
+          "row_total": null,
+          "subtotals": null,
+          "vis_config": {
+            "x_axis_gridlines": false,
+            "y_axis_gridlines": true,
+            "show_view_names": false,
+            "show_y_axis_labels": true,
+            "show_y_axis_ticks": true,
+            "y_axis_tick_density": "default",
+            "y_axis_tick_density_custom": 5,
+            "show_x_axis_label": true,
+            "show_x_axis_ticks": true,
+            "y_axis_scale_mode": "linear",
+            "x_axis_reversed": false,
+            "y_axis_reversed": false,
+            "plot_size_by_field": false,
+            "trellis": "",
+            "stacking": "",
+            "limit_displayed_rows": false,
+            "legend_position": "center",
+            "point_style": "none",
+            "show_value_labels": false,
+            "label_density": 25,
+            "x_axis_scale": "auto",
+            "y_axis_combined": true,
+            "ordering": "none",
+            "show_null_labels": false,
+            "show_totals_labels": false,
+            "show_silhouette": false,
+            "totals_color": "#808080",
+            "show_null_points": true,
+            "interpolation": "linear",
+            "type": "looker_column",
+            "defaults_version": 1,
+            "series_types": {
+            }
+          },
+          "filter_config": {
+            "order_items.created_date": [
+              {
+                "type": "past",
+                "values": [
+                  {
+                    "constant": "365",
+                    "unit": "day"
+                  },
+                  {
+                  }
+                ],
+                "id": 3
+              }
+            ]
+          },
+          "visible_ui_sections": null,
+          "slug": "y4mvF5xYF3gqpZCxVZzDCGx8vkN353yR",
+          "client_id": "4R4QSE3gLyHR4gbszRQNHG",
+          "share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/x/4R4QSE3gLyHR4gbszRQNHG",
+          "expanded_share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A3%7D%5D%7D&origin=share-expanded",
+          "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A3%7D%5D%7D",
+          "has_table_calculations": false,
+          "id": "y4mvF5xYF3gqpZCxVZzDCGx8vkN353yR",
+          "model": "external_data_model",
+          "limit": "500",
+          "column_limit": "50",
+          "dynamic_fields": null,
+          "query_timezone": null,
+          "quick_calcs": null,
+          "analysis_config": null,
+          "can": {
+            "can_clear_cache": true,
+            "cost_estimate": true,
+            "create": true,
+            "index": true,
+            "show": true,
+            "download": true,
+            "download_unlimited": true,
+            "edit_custom_fields": true,
+            "edit_table_calculations": true,
+            "explore": true,
+            "generate_drill_links": true,
+            "render": true,
+            "run": true,
+            "see_results": true,
+            "save": true,
+            "schedule": true,
+            "see_aggregate_table_lookml": true,
+            "see_derived_table_lookml": true,
+            "see_lookml": true,
+            "see_sql": true,
+            "send_all_results": true,
+            "use_custom_fields": true
+          }
+        },
+        "vis_config": {
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "plot_size_by_field": false,
+          "trellis": "",
+          "stacking": "",
+          "limit_displayed_rows": false,
+          "legend_position": "center",
+          "point_style": "none",
+          "show_value_labels": false,
+          "label_density": 25,
+          "x_axis_scale": "auto",
+          "y_axis_combined": true,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "show_null_points": true,
+          "interpolation": "linear",
+          "type": "looker_column",
+          "defaults_version": 1,
+          "series_types": {
+          }
+        },
+        "filterables": [
+          {
+            "model": "external_data_model",
+            "view": "order_items",
+            "name": "",
+            "listen": [
+              {
+                "dashboard_filter_name": "Created Date",
+                "field": "order_items.created_date"
+              },
+              {
+                "dashboard_filter_name": "Brand",
+                "field": "products.brand"
+              }
+            ]
+          }
+        ],
+        "query_id": "y4mvF5xYF3gqpZCxVZzDCGx8vkN353yR"
+      },
+      "can": {
+        "can_clear_cache": true,
+        "create": true,
+        "destroy": true,
+        "update": true,
+        "explore": true,
+        "find_and_replace": true,
+        "show_errors": true,
+        "index": true,
+        "show": true,
+        "run": false,
+        "see_aggregate_table_lookml": true
+      },
+      "alerts": [
+
+      ]
+    },
+    {
+      "body_text": null,
+      "body_text_as_html": null,
+      "dashboard_id": "36",
+      "dashboard_layout_id": null,
+      "edit_uri": null,
+      "id": "298",
+      "look": null,
+      "look_id": null,
+      "lookml_link_id": "",
+      "merge_result_id": null,
+      "note_display": null,
+      "note_state": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "query": {
+        "view": "order_items",
+        "fields": [
+          "order_items.total_sale_price",
+          "users.age_tier"
+        ],
+        "pivots": [
+          "users.age_tier"
+        ],
+        "fill_fields": [
+          "users.age_tier"
+        ],
+        "filters": {
+          "order_items.created_date": "365 days"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "users.age_tier"
+        ],
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "vis_config": {
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": false,
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "plot_size_by_field": false,
+          "trellis": "",
+          "stacking": "percent",
+          "limit_displayed_rows": false,
+          "legend_position": "center",
+          "point_style": "none",
+          "show_value_labels": true,
+          "label_density": 25,
+          "x_axis_scale": "auto",
+          "y_axis_combined": true,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "y_axes": [
+            {
+              "label": "",
+              "orientation": "left",
+              "series": [
+                {
+                  "axisId": "Below 0 - 0 - order_items.total_sale_price",
+                  "id": "Below 0 - 0 - order_items.total_sale_price",
+                  "name": "Below 0"
+                },
+                {
+                  "axisId": "0 to 9 - 1 - order_items.total_sale_price",
+                  "id": "0 to 9 - 1 - order_items.total_sale_price",
+                  "name": "0 to 9"
+                },
+                {
+                  "axisId": "10 to 19 - 2 - order_items.total_sale_price",
+                  "id": "10 to 19 - 2 - order_items.total_sale_price",
+                  "name": "10 to 19"
+                },
+                {
+                  "axisId": "20 to 29 - 3 - order_items.total_sale_price",
+                  "id": "20 to 29 - 3 - order_items.total_sale_price",
+                  "name": "20 to 29"
+                },
+                {
+                  "axisId": "30 to 39 - 4 - order_items.total_sale_price",
+                  "id": "30 to 39 - 4 - order_items.total_sale_price",
+                  "name": "30 to 39"
+                },
+                {
+                  "axisId": "40 to 49 - 5 - order_items.total_sale_price",
+                  "id": "40 to 49 - 5 - order_items.total_sale_price",
+                  "name": "40 to 49"
+                },
+                {
+                  "axisId": "50 to 59 - 6 - order_items.total_sale_price",
+                  "id": "50 to 59 - 6 - order_items.total_sale_price",
+                  "name": "50 to 59"
+                },
+                {
+                  "axisId": "60 to 69 - 7 - order_items.total_sale_price",
+                  "id": "60 to 69 - 7 - order_items.total_sale_price",
+                  "name": "60 to 69"
+                },
+                {
+                  "axisId": "70 or Above - 8 - order_items.total_sale_price",
+                  "id": "70 or Above - 8 - order_items.total_sale_price",
+                  "name": "70 or Above"
+                }
+              ],
+              "showLabels": true,
+              "showValues": false,
+              "unpinAxis": false,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear"
+            }
+          ],
+          "x_axis_zoom": false,
+          "y_axis_zoom": false,
+          "hide_legend": false,
+          "series_types": {
+          },
+          "value_labels": "legend",
+          "label_type": "labVal",
+          "type": "looker_column",
+          "inner_radius": 50,
+          "show_null_points": true,
+          "interpolation": "linear",
+          "defaults_version": 1,
+          "hidden_pivots": {
+          }
+        },
+        "filter_config": {
+          "order_items.created_date": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "365",
+                  "unit": "day"
+                },
+                {
+                }
+              ],
+              "id": 1,
+              "error": false
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "mc8zV22tYgq724sThrg8zGPkJTC7DQBb",
+        "client_id": "K7a5AQsvcH24whdQbc9973",
+        "share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/x/K7a5AQsvcH24whdQbc9973",
+        "expanded_share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,users.age_tier&pivots=users.age_tier&fill_fields=users.age_tier&f[order_items.created_date]=365+days&sorts=users.age_tier&limit=10&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Afalse%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22percent%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Atrue%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22orientation%22%3A%22left%22%2C%22series%22%3A%5B%7B%22axisId%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22id%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22name%22%3A%22Below+0%22%7D%2C%7B%22axisId%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22id%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22name%22%3A%220+to+9%22%7D%2C%7B%22axisId%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22id%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22name%22%3A%2210+to+19%22%7D%2C%7B%22axisId%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22id%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22name%22%3A%2220+to+29%22%7D%2C%7B%22axisId%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22id%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22name%22%3A%2230+to+39%22%7D%2C%7B%22axisId%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22id%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22name%22%3A%2240+to+49%22%7D%2C%7B%22axisId%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22id%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22name%22%3A%2250+to+59%22%7D%2C%7B%22axisId%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22id%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22name%22%3A%2260+to+69%22%7D%2C%7B%22axisId%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22id%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22name%22%3A%2270+or+Above%22%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Afalse%2C%22unpinAxis%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%7D%5D%2C%22x_axis_zoom%22%3Afalse%2C%22y_axis_zoom%22%3Afalse%2C%22hide_legend%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labVal%22%2C%22type%22%3A%22looker_column%22%2C%22inner_radius%22%3A50%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22defaults_version%22%3A1%2C%22hidden_pivots%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,users.age_tier&pivots=users.age_tier&fill_fields=users.age_tier&f[order_items.created_date]=365+days&sorts=users.age_tier&limit=10&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Afalse%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22percent%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Atrue%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22orientation%22%3A%22left%22%2C%22series%22%3A%5B%7B%22axisId%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22id%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22name%22%3A%22Below+0%22%7D%2C%7B%22axisId%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22id%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22name%22%3A%220+to+9%22%7D%2C%7B%22axisId%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22id%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22name%22%3A%2210+to+19%22%7D%2C%7B%22axisId%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22id%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22name%22%3A%2220+to+29%22%7D%2C%7B%22axisId%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22id%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22name%22%3A%2230+to+39%22%7D%2C%7B%22axisId%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22id%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22name%22%3A%2240+to+49%22%7D%2C%7B%22axisId%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22id%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22name%22%3A%2250+to+59%22%7D%2C%7B%22axisId%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22id%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22name%22%3A%2260+to+69%22%7D%2C%7B%22axisId%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22id%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22name%22%3A%2270+or+Above%22%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Afalse%2C%22unpinAxis%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%7D%5D%2C%22x_axis_zoom%22%3Afalse%2C%22y_axis_zoom%22%3Afalse%2C%22hide_legend%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labVal%22%2C%22type%22%3A%22looker_column%22%2C%22inner_radius%22%3A50%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22defaults_version%22%3A1%2C%22hidden_pivots%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+        "has_table_calculations": false,
+        "id": "mc8zV22tYgq724sThrg8zGPkJTC7DQBb",
+        "model": "external_data_model",
+        "limit": "10",
+        "column_limit": "50",
+        "dynamic_fields": "[]",
+        "query_timezone": null,
+        "quick_calcs": [
+
+        ],
+        "analysis_config": null,
+        "can": {
+          "can_clear_cache": true,
+          "cost_estimate": true,
+          "create": true,
+          "index": true,
+          "show": true,
+          "download": true,
+          "download_unlimited": true,
+          "edit_custom_fields": true,
+          "edit_table_calculations": true,
+          "explore": true,
+          "generate_drill_links": true,
+          "render": true,
+          "run": true,
+          "see_results": true,
+          "save": true,
+          "schedule": true,
+          "see_aggregate_table_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_lookml": true,
+          "see_sql": true,
+          "send_all_results": true,
+          "use_custom_fields": true
+        }
+      },
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "result_maker_id": "206",
+      "subtitle_text": null,
+      "title": "Sales by Age Tier",
+      "title_hidden": false,
+      "title_text": null,
+      "type": "vis",
+      "alert_count": 0,
+      "rich_content_json": null,
+      "title_text_as_html": null,
+      "subtitle_text_as_html": null,
+      "extension_id": null,
+      "aria_description": null,
+      "query_id": "mc8zV22tYgq724sThrg8zGPkJTC7DQBb",
+      "result_maker": {
+        "id": "206",
+        "dynamic_fields": "[]",
+        "sorts": [
+          "users.age_tier"
+        ],
+        "merge_result_id": null,
+        "total": false,
+        "sql_query_id": "",
+        "query": {
+          "view": "order_items",
+          "fields": [
+            "order_items.total_sale_price",
+            "users.age_tier"
+          ],
+          "pivots": [
+            "users.age_tier"
+          ],
+          "fill_fields": [
+            "users.age_tier"
+          ],
+          "filters": {
+            "order_items.created_date": "365 days"
+          },
+          "filter_expression": null,
+          "sorts": [
+            "users.age_tier"
+          ],
+          "total": null,
+          "row_total": null,
+          "subtotals": null,
+          "vis_config": {
+            "x_axis_gridlines": false,
+            "y_axis_gridlines": true,
+            "show_view_names": false,
+            "show_y_axis_labels": true,
+            "show_y_axis_ticks": true,
+            "y_axis_tick_density": "default",
+            "y_axis_tick_density_custom": 5,
+            "show_x_axis_label": true,
+            "show_x_axis_ticks": false,
+            "y_axis_scale_mode": "linear",
+            "x_axis_reversed": false,
+            "y_axis_reversed": false,
+            "plot_size_by_field": false,
+            "trellis": "",
+            "stacking": "percent",
+            "limit_displayed_rows": false,
+            "legend_position": "center",
+            "point_style": "none",
+            "show_value_labels": true,
+            "label_density": 25,
+            "x_axis_scale": "auto",
+            "y_axis_combined": true,
+            "ordering": "none",
+            "show_null_labels": false,
+            "show_totals_labels": false,
+            "show_silhouette": false,
+            "totals_color": "#808080",
+            "y_axes": [
+              {
+                "label": "",
+                "orientation": "left",
+                "series": [
+                  {
+                    "axisId": "Below 0 - 0 - order_items.total_sale_price",
+                    "id": "Below 0 - 0 - order_items.total_sale_price",
+                    "name": "Below 0"
+                  },
+                  {
+                    "axisId": "0 to 9 - 1 - order_items.total_sale_price",
+                    "id": "0 to 9 - 1 - order_items.total_sale_price",
+                    "name": "0 to 9"
+                  },
+                  {
+                    "axisId": "10 to 19 - 2 - order_items.total_sale_price",
+                    "id": "10 to 19 - 2 - order_items.total_sale_price",
+                    "name": "10 to 19"
+                  },
+                  {
+                    "axisId": "20 to 29 - 3 - order_items.total_sale_price",
+                    "id": "20 to 29 - 3 - order_items.total_sale_price",
+                    "name": "20 to 29"
+                  },
+                  {
+                    "axisId": "30 to 39 - 4 - order_items.total_sale_price",
+                    "id": "30 to 39 - 4 - order_items.total_sale_price",
+                    "name": "30 to 39"
+                  },
+                  {
+                    "axisId": "40 to 49 - 5 - order_items.total_sale_price",
+                    "id": "40 to 49 - 5 - order_items.total_sale_price",
+                    "name": "40 to 49"
+                  },
+                  {
+                    "axisId": "50 to 59 - 6 - order_items.total_sale_price",
+                    "id": "50 to 59 - 6 - order_items.total_sale_price",
+                    "name": "50 to 59"
+                  },
+                  {
+                    "axisId": "60 to 69 - 7 - order_items.total_sale_price",
+                    "id": "60 to 69 - 7 - order_items.total_sale_price",
+                    "name": "60 to 69"
+                  },
+                  {
+                    "axisId": "70 or Above - 8 - order_items.total_sale_price",
+                    "id": "70 or Above - 8 - order_items.total_sale_price",
+                    "name": "70 or Above"
+                  }
+                ],
+                "showLabels": true,
+                "showValues": false,
+                "unpinAxis": false,
+                "tickDensity": "default",
+                "tickDensityCustom": 5,
+                "type": "linear"
+              }
+            ],
+            "x_axis_zoom": false,
+            "y_axis_zoom": false,
+            "hide_legend": false,
+            "series_types": {
+            },
+            "value_labels": "legend",
+            "label_type": "labVal",
+            "type": "looker_column",
+            "inner_radius": 50,
+            "show_null_points": true,
+            "interpolation": "linear",
+            "defaults_version": 1,
+            "hidden_pivots": {
+            }
+          },
+          "filter_config": {
+            "order_items.created_date": [
+              {
+                "type": "past",
+                "values": [
+                  {
+                    "constant": "365",
+                    "unit": "day"
+                  },
+                  {
+                  }
+                ],
+                "id": 1,
+                "error": false
+              }
+            ]
+          },
+          "visible_ui_sections": null,
+          "slug": "mc8zV22tYgq724sThrg8zGPkJTC7DQBb",
+          "client_id": "K7a5AQsvcH24whdQbc9973",
+          "share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/x/K7a5AQsvcH24whdQbc9973",
+          "expanded_share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,users.age_tier&pivots=users.age_tier&fill_fields=users.age_tier&f[order_items.created_date]=365+days&sorts=users.age_tier&limit=10&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Afalse%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22percent%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Atrue%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22orientation%22%3A%22left%22%2C%22series%22%3A%5B%7B%22axisId%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22id%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22name%22%3A%22Below+0%22%7D%2C%7B%22axisId%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22id%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22name%22%3A%220+to+9%22%7D%2C%7B%22axisId%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22id%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22name%22%3A%2210+to+19%22%7D%2C%7B%22axisId%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22id%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22name%22%3A%2220+to+29%22%7D%2C%7B%22axisId%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22id%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22name%22%3A%2230+to+39%22%7D%2C%7B%22axisId%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22id%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22name%22%3A%2240+to+49%22%7D%2C%7B%22axisId%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22id%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22name%22%3A%2250+to+59%22%7D%2C%7B%22axisId%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22id%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22name%22%3A%2260+to+69%22%7D%2C%7B%22axisId%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22id%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22name%22%3A%2270+or+Above%22%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Afalse%2C%22unpinAxis%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%7D%5D%2C%22x_axis_zoom%22%3Afalse%2C%22y_axis_zoom%22%3Afalse%2C%22hide_legend%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labVal%22%2C%22type%22%3A%22looker_column%22%2C%22inner_radius%22%3A50%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22defaults_version%22%3A1%2C%22hidden_pivots%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+          "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,users.age_tier&pivots=users.age_tier&fill_fields=users.age_tier&f[order_items.created_date]=365+days&sorts=users.age_tier&limit=10&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Afalse%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22percent%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Atrue%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22orientation%22%3A%22left%22%2C%22series%22%3A%5B%7B%22axisId%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22id%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22name%22%3A%22Below+0%22%7D%2C%7B%22axisId%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22id%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22name%22%3A%220+to+9%22%7D%2C%7B%22axisId%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22id%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22name%22%3A%2210+to+19%22%7D%2C%7B%22axisId%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22id%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22name%22%3A%2220+to+29%22%7D%2C%7B%22axisId%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22id%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22name%22%3A%2230+to+39%22%7D%2C%7B%22axisId%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22id%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22name%22%3A%2240+to+49%22%7D%2C%7B%22axisId%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22id%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22name%22%3A%2250+to+59%22%7D%2C%7B%22axisId%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22id%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22name%22%3A%2260+to+69%22%7D%2C%7B%22axisId%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22id%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22name%22%3A%2270+or+Above%22%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Afalse%2C%22unpinAxis%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%7D%5D%2C%22x_axis_zoom%22%3Afalse%2C%22y_axis_zoom%22%3Afalse%2C%22hide_legend%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labVal%22%2C%22type%22%3A%22looker_column%22%2C%22inner_radius%22%3A50%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22defaults_version%22%3A1%2C%22hidden_pivots%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+          "has_table_calculations": false,
+          "id": "mc8zV22tYgq724sThrg8zGPkJTC7DQBb",
+          "model": "external_data_model",
+          "limit": "10",
+          "column_limit": "50",
+          "dynamic_fields": "[]",
+          "query_timezone": null,
+          "quick_calcs": [
+
+          ],
+          "analysis_config": null,
+          "can": {
+            "can_clear_cache": true,
+            "cost_estimate": true,
+            "create": true,
+            "index": true,
+            "show": true,
+            "download": true,
+            "download_unlimited": true,
+            "edit_custom_fields": true,
+            "edit_table_calculations": true,
+            "explore": true,
+            "generate_drill_links": true,
+            "render": true,
+            "run": true,
+            "see_results": true,
+            "save": true,
+            "schedule": true,
+            "see_aggregate_table_lookml": true,
+            "see_derived_table_lookml": true,
+            "see_lookml": true,
+            "see_sql": true,
+            "send_all_results": true,
+            "use_custom_fields": true
+          }
+        },
+        "vis_config": {
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": false,
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "plot_size_by_field": false,
+          "trellis": "",
+          "stacking": "percent",
+          "limit_displayed_rows": false,
+          "legend_position": "center",
+          "point_style": "none",
+          "show_value_labels": true,
+          "label_density": 25,
+          "x_axis_scale": "auto",
+          "y_axis_combined": true,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "y_axes": [
+            {
+              "label": "",
+              "orientation": "left",
+              "series": [
+                {
+                  "axisId": "Below 0 - 0 - order_items.total_sale_price",
+                  "id": "Below 0 - 0 - order_items.total_sale_price",
+                  "name": "Below 0"
+                },
+                {
+                  "axisId": "0 to 9 - 1 - order_items.total_sale_price",
+                  "id": "0 to 9 - 1 - order_items.total_sale_price",
+                  "name": "0 to 9"
+                },
+                {
+                  "axisId": "10 to 19 - 2 - order_items.total_sale_price",
+                  "id": "10 to 19 - 2 - order_items.total_sale_price",
+                  "name": "10 to 19"
+                },
+                {
+                  "axisId": "20 to 29 - 3 - order_items.total_sale_price",
+                  "id": "20 to 29 - 3 - order_items.total_sale_price",
+                  "name": "20 to 29"
+                },
+                {
+                  "axisId": "30 to 39 - 4 - order_items.total_sale_price",
+                  "id": "30 to 39 - 4 - order_items.total_sale_price",
+                  "name": "30 to 39"
+                },
+                {
+                  "axisId": "40 to 49 - 5 - order_items.total_sale_price",
+                  "id": "40 to 49 - 5 - order_items.total_sale_price",
+                  "name": "40 to 49"
+                },
+                {
+                  "axisId": "50 to 59 - 6 - order_items.total_sale_price",
+                  "id": "50 to 59 - 6 - order_items.total_sale_price",
+                  "name": "50 to 59"
+                },
+                {
+                  "axisId": "60 to 69 - 7 - order_items.total_sale_price",
+                  "id": "60 to 69 - 7 - order_items.total_sale_price",
+                  "name": "60 to 69"
+                },
+                {
+                  "axisId": "70 or Above - 8 - order_items.total_sale_price",
+                  "id": "70 or Above - 8 - order_items.total_sale_price",
+                  "name": "70 or Above"
+                }
+              ],
+              "showLabels": true,
+              "showValues": false,
+              "unpinAxis": false,
+              "tickDensity": "default",
+              "tickDensityCustom": 5,
+              "type": "linear"
+            }
+          ],
+          "x_axis_zoom": false,
+          "y_axis_zoom": false,
+          "hide_legend": false,
+          "series_types": {
+          },
+          "value_labels": "legend",
+          "label_type": "labVal",
+          "type": "looker_column",
+          "inner_radius": 50,
+          "show_null_points": true,
+          "interpolation": "linear",
+          "defaults_version": 1,
+          "hidden_pivots": {
+          }
+        },
+        "filterables": [
+          {
+            "model": "external_data_model",
+            "view": "order_items",
+            "name": "",
+            "listen": [
+              {
+                "dashboard_filter_name": "Created Date",
+                "field": "order_items.created_date"
+              },
+              {
+                "dashboard_filter_name": "Brand",
+                "field": "products.brand"
+              }
+            ]
+          }
+        ],
+        "query_id": "mc8zV22tYgq724sThrg8zGPkJTC7DQBb"
+      },
+      "can": {
+        "can_clear_cache": true,
+        "create": true,
+        "destroy": true,
+        "update": true,
+        "explore": true,
+        "find_and_replace": true,
+        "show_errors": true,
+        "index": true,
+        "show": true,
+        "run": false,
+        "see_aggregate_table_lookml": true
+      },
+      "alerts": [
+
+      ]
+    },
+    {
+      "body_text": null,
+      "body_text_as_html": null,
+      "dashboard_id": "36",
+      "dashboard_layout_id": null,
+      "edit_uri": null,
+      "id": "299",
+      "look": null,
+      "look_id": null,
+      "lookml_link_id": "",
+      "merge_result_id": null,
+      "note_display": null,
+      "note_state": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "query": {
+        "view": "order_items",
+        "fields": [
+          "order_items.total_sale_price",
+          "order_items.order_count",
+          "products.category"
+        ],
+        "pivots": null,
+        "fill_fields": null,
+        "filters": {
+          "order_items.created_date": "365 days"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "order_items.total_sale_price desc 0"
+        ],
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "vis_config": {
+          "show_view_names": false,
+          "show_row_numbers": true,
+          "transpose": false,
+          "truncate_text": true,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "size_to_fit": true,
+          "table_theme": "transparent",
+          "limit_displayed_rows": false,
+          "enable_conditional_formatting": false,
+          "header_text_alignment": "left",
+          "header_font_size": "12",
+          "rows_font_size": "12",
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false,
+          "type": "looker_grid",
+          "show_sql_query_menu_options": false,
+          "show_totals": true,
+          "show_row_totals": true,
+          "truncate_header": false,
+          "minimum_column_width": 75,
+          "series_column_widths": {
+            "products.name": 350
+          },
+          "series_cell_visualizations": {
+            "order_items.total_sale_price": {
+              "is_active": true,
+              "__FILE": "multi_instance/dashboards/data_security_shared_template_dashboard.dashboard.lookml",
+              "__LINE_NUM": 141
+            },
+            "order_items.order_count": {
+              "is_active": true,
+              "__FILE": "multi_instance/dashboards/data_security_shared_template_dashboard.dashboard.lookml",
+              "__LINE_NUM": 143
+            },
+            "order_items.total_gross_margin": {
+              "is_active": true,
+              "__FILE": "multi_instance/dashboards/data_security_shared_template_dashboard.dashboard.lookml",
+              "__LINE_NUM": 145
+            }
+          },
+          "hidden_pivots": {
+          },
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "plot_size_by_field": false,
+          "trellis": "",
+          "stacking": "",
+          "legend_position": "center",
+          "point_style": "none",
+          "show_value_labels": false,
+          "label_density": 25,
+          "x_axis_scale": "auto",
+          "y_axis_combined": true,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "defaults_version": 1,
+          "series_types": {
+          }
+        },
+        "filter_config": {
+          "order_items.created_date": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "365",
+                  "unit": "day"
+                },
+                {
+                }
+              ],
+              "id": 5
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "mk8VVkJSc62bDtBW4nXCg8ZQJyCBZdTv",
+        "client_id": "vxwdf86DlgsnrBwxx3Nr9v",
+        "share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/x/vxwdf86DlgsnrBwxx3Nr9v",
+        "expanded_share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.order_count,products.category&f[order_items.created_date]=365+days&sorts=order_items.total_sale_price+desc+0&limit=500&column_limit=50&vis=%7B%22show_view_names%22%3Afalse%2C%22show_row_numbers%22%3Atrue%2C%22transpose%22%3Afalse%2C%22truncate_text%22%3Atrue%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22size_to_fit%22%3Atrue%2C%22table_theme%22%3A%22transparent%22%2C%22limit_displayed_rows%22%3Afalse%2C%22enable_conditional_formatting%22%3Afalse%2C%22header_text_alignment%22%3A%22left%22%2C%22header_font_size%22%3A%2212%22%2C%22rows_font_size%22%3A%2212%22%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%2C%22type%22%3A%22looker_grid%22%2C%22show_sql_query_menu_options%22%3Afalse%2C%22show_totals%22%3Atrue%2C%22show_row_totals%22%3Atrue%2C%22truncate_header%22%3Afalse%2C%22minimum_column_width%22%3A75%2C%22series_column_widths%22%3A%7B%22products.name%22%3A350%7D%2C%22series_cell_visualizations%22%3A%7B%22order_items.total_sale_price%22%3A%7B%22is_active%22%3Atrue%2C%22__FILE%22%3A%22multi_instance%2Fdashboards%2Fdata_security_shared_template_dashboard.dashboard.lookml%22%2C%22__LINE_NUM%22%3A141%7D%2C%22order_items.order_count%22%3A%7B%22is_active%22%3Atrue%2C%22__FILE%22%3A%22multi_instance%2Fdashboards%2Fdata_security_shared_template_dashboard.dashboard.lookml%22%2C%22__LINE_NUM%22%3A143%7D%2C%22order_items.total_gross_margin%22%3A%7B%22is_active%22%3Atrue%2C%22__FILE%22%3A%22multi_instance%2Fdashboards%2Fdata_security_shared_template_dashboard.dashboard.lookml%22%2C%22__LINE_NUM%22%3A145%7D%7D%2C%22hidden_pivots%22%3A%7B%7D%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A5%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.order_count,products.category&f[order_items.created_date]=365+days&sorts=order_items.total_sale_price+desc+0&limit=500&column_limit=50&vis=%7B%22show_view_names%22%3Afalse%2C%22show_row_numbers%22%3Atrue%2C%22transpose%22%3Afalse%2C%22truncate_text%22%3Atrue%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22size_to_fit%22%3Atrue%2C%22table_theme%22%3A%22transparent%22%2C%22limit_displayed_rows%22%3Afalse%2C%22enable_conditional_formatting%22%3Afalse%2C%22header_text_alignment%22%3A%22left%22%2C%22header_font_size%22%3A%2212%22%2C%22rows_font_size%22%3A%2212%22%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%2C%22type%22%3A%22looker_grid%22%2C%22show_sql_query_menu_options%22%3Afalse%2C%22show_totals%22%3Atrue%2C%22show_row_totals%22%3Atrue%2C%22truncate_header%22%3Afalse%2C%22minimum_column_width%22%3A75%2C%22series_column_widths%22%3A%7B%22products.name%22%3A350%7D%2C%22series_cell_visualizations%22%3A%7B%22order_items.total_sale_price%22%3A%7B%22is_active%22%3Atrue%2C%22__FILE%22%3A%22multi_instance%2Fdashboards%2Fdata_security_shared_template_dashboard.dashboard.lookml%22%2C%22__LINE_NUM%22%3A141%7D%2C%22order_items.order_count%22%3A%7B%22is_active%22%3Atrue%2C%22__FILE%22%3A%22multi_instance%2Fdashboards%2Fdata_security_shared_template_dashboard.dashboard.lookml%22%2C%22__LINE_NUM%22%3A143%7D%2C%22order_items.total_gross_margin%22%3A%7B%22is_active%22%3Atrue%2C%22__FILE%22%3A%22multi_instance%2Fdashboards%2Fdata_security_shared_template_dashboard.dashboard.lookml%22%2C%22__LINE_NUM%22%3A145%7D%7D%2C%22hidden_pivots%22%3A%7B%7D%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A5%7D%5D%7D&dynamic_fields=%5B%5D",
+        "has_table_calculations": false,
+        "id": "mk8VVkJSc62bDtBW4nXCg8ZQJyCBZdTv",
+        "model": "external_data_model",
+        "limit": "500",
+        "column_limit": "50",
+        "dynamic_fields": "[]",
+        "query_timezone": null,
+        "quick_calcs": [
+
+        ],
+        "analysis_config": null,
+        "can": {
+          "can_clear_cache": true,
+          "cost_estimate": true,
+          "create": true,
+          "index": true,
+          "show": true,
+          "download": true,
+          "download_unlimited": true,
+          "edit_custom_fields": true,
+          "edit_table_calculations": true,
+          "explore": true,
+          "generate_drill_links": true,
+          "render": true,
+          "run": true,
+          "see_results": true,
+          "save": true,
+          "schedule": true,
+          "see_aggregate_table_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_lookml": true,
+          "see_sql": true,
+          "send_all_results": true,
+          "use_custom_fields": true
+        }
+      },
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "result_maker_id": "205",
+      "subtitle_text": null,
+      "title": "Top Categories",
+      "title_hidden": false,
+      "title_text": null,
+      "type": "vis",
+      "alert_count": 0,
+      "rich_content_json": null,
+      "title_text_as_html": null,
+      "subtitle_text_as_html": null,
+      "extension_id": null,
+      "aria_description": null,
+      "query_id": "mk8VVkJSc62bDtBW4nXCg8ZQJyCBZdTv",
+      "result_maker": {
+        "id": "205",
+        "dynamic_fields": "[]",
+        "sorts": [
+          "order_items.total_sale_price desc 0"
+        ],
+        "merge_result_id": null,
+        "total": false,
+        "sql_query_id": "",
+        "query": {
+          "view": "order_items",
+          "fields": [
+            "order_items.total_sale_price",
+            "order_items.order_count",
+            "products.category"
+          ],
+          "pivots": null,
+          "fill_fields": null,
+          "filters": {
+            "order_items.created_date": "365 days"
+          },
+          "filter_expression": null,
+          "sorts": [
+            "order_items.total_sale_price desc 0"
+          ],
+          "total": null,
+          "row_total": null,
+          "subtotals": null,
+          "vis_config": {
+            "show_view_names": false,
+            "show_row_numbers": true,
+            "transpose": false,
+            "truncate_text": true,
+            "hide_totals": false,
+            "hide_row_totals": false,
+            "size_to_fit": true,
+            "table_theme": "transparent",
+            "limit_displayed_rows": false,
+            "enable_conditional_formatting": false,
+            "header_text_alignment": "left",
+            "header_font_size": "12",
+            "rows_font_size": "12",
+            "conditional_formatting_include_totals": false,
+            "conditional_formatting_include_nulls": false,
+            "type": "looker_grid",
+            "show_sql_query_menu_options": false,
+            "show_totals": true,
+            "show_row_totals": true,
+            "truncate_header": false,
+            "minimum_column_width": 75,
+            "series_column_widths": {
+              "products.name": 350
+            },
+            "series_cell_visualizations": {
+              "order_items.total_sale_price": {
+                "is_active": true,
+                "__FILE": "multi_instance/dashboards/data_security_shared_template_dashboard.dashboard.lookml",
+                "__LINE_NUM": 141
+              },
+              "order_items.order_count": {
+                "is_active": true,
+                "__FILE": "multi_instance/dashboards/data_security_shared_template_dashboard.dashboard.lookml",
+                "__LINE_NUM": 143
+              },
+              "order_items.total_gross_margin": {
+                "is_active": true,
+                "__FILE": "multi_instance/dashboards/data_security_shared_template_dashboard.dashboard.lookml",
+                "__LINE_NUM": 145
+              }
+            },
+            "hidden_pivots": {
+            },
+            "x_axis_gridlines": false,
+            "y_axis_gridlines": true,
+            "show_y_axis_labels": true,
+            "show_y_axis_ticks": true,
+            "y_axis_tick_density": "default",
+            "y_axis_tick_density_custom": 5,
+            "show_x_axis_label": true,
+            "show_x_axis_ticks": true,
+            "y_axis_scale_mode": "linear",
+            "x_axis_reversed": false,
+            "y_axis_reversed": false,
+            "plot_size_by_field": false,
+            "trellis": "",
+            "stacking": "",
+            "legend_position": "center",
+            "point_style": "none",
+            "show_value_labels": false,
+            "label_density": 25,
+            "x_axis_scale": "auto",
+            "y_axis_combined": true,
+            "ordering": "none",
+            "show_null_labels": false,
+            "show_totals_labels": false,
+            "show_silhouette": false,
+            "totals_color": "#808080",
+            "defaults_version": 1,
+            "series_types": {
+            }
+          },
+          "filter_config": {
+            "order_items.created_date": [
+              {
+                "type": "past",
+                "values": [
+                  {
+                    "constant": "365",
+                    "unit": "day"
+                  },
+                  {
+                  }
+                ],
+                "id": 5
+              }
+            ]
+          },
+          "visible_ui_sections": null,
+          "slug": "mk8VVkJSc62bDtBW4nXCg8ZQJyCBZdTv",
+          "client_id": "vxwdf86DlgsnrBwxx3Nr9v",
+          "share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/x/vxwdf86DlgsnrBwxx3Nr9v",
+          "expanded_share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.order_count,products.category&f[order_items.created_date]=365+days&sorts=order_items.total_sale_price+desc+0&limit=500&column_limit=50&vis=%7B%22show_view_names%22%3Afalse%2C%22show_row_numbers%22%3Atrue%2C%22transpose%22%3Afalse%2C%22truncate_text%22%3Atrue%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22size_to_fit%22%3Atrue%2C%22table_theme%22%3A%22transparent%22%2C%22limit_displayed_rows%22%3Afalse%2C%22enable_conditional_formatting%22%3Afalse%2C%22header_text_alignment%22%3A%22left%22%2C%22header_font_size%22%3A%2212%22%2C%22rows_font_size%22%3A%2212%22%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%2C%22type%22%3A%22looker_grid%22%2C%22show_sql_query_menu_options%22%3Afalse%2C%22show_totals%22%3Atrue%2C%22show_row_totals%22%3Atrue%2C%22truncate_header%22%3Afalse%2C%22minimum_column_width%22%3A75%2C%22series_column_widths%22%3A%7B%22products.name%22%3A350%7D%2C%22series_cell_visualizations%22%3A%7B%22order_items.total_sale_price%22%3A%7B%22is_active%22%3Atrue%2C%22__FILE%22%3A%22multi_instance%2Fdashboards%2Fdata_security_shared_template_dashboard.dashboard.lookml%22%2C%22__LINE_NUM%22%3A141%7D%2C%22order_items.order_count%22%3A%7B%22is_active%22%3Atrue%2C%22__FILE%22%3A%22multi_instance%2Fdashboards%2Fdata_security_shared_template_dashboard.dashboard.lookml%22%2C%22__LINE_NUM%22%3A143%7D%2C%22order_items.total_gross_margin%22%3A%7B%22is_active%22%3Atrue%2C%22__FILE%22%3A%22multi_instance%2Fdashboards%2Fdata_security_shared_template_dashboard.dashboard.lookml%22%2C%22__LINE_NUM%22%3A145%7D%7D%2C%22hidden_pivots%22%3A%7B%7D%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A5%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+          "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.order_count,products.category&f[order_items.created_date]=365+days&sorts=order_items.total_sale_price+desc+0&limit=500&column_limit=50&vis=%7B%22show_view_names%22%3Afalse%2C%22show_row_numbers%22%3Atrue%2C%22transpose%22%3Afalse%2C%22truncate_text%22%3Atrue%2C%22hide_totals%22%3Afalse%2C%22hide_row_totals%22%3Afalse%2C%22size_to_fit%22%3Atrue%2C%22table_theme%22%3A%22transparent%22%2C%22limit_displayed_rows%22%3Afalse%2C%22enable_conditional_formatting%22%3Afalse%2C%22header_text_alignment%22%3A%22left%22%2C%22header_font_size%22%3A%2212%22%2C%22rows_font_size%22%3A%2212%22%2C%22conditional_formatting_include_totals%22%3Afalse%2C%22conditional_formatting_include_nulls%22%3Afalse%2C%22type%22%3A%22looker_grid%22%2C%22show_sql_query_menu_options%22%3Afalse%2C%22show_totals%22%3Atrue%2C%22show_row_totals%22%3Atrue%2C%22truncate_header%22%3Afalse%2C%22minimum_column_width%22%3A75%2C%22series_column_widths%22%3A%7B%22products.name%22%3A350%7D%2C%22series_cell_visualizations%22%3A%7B%22order_items.total_sale_price%22%3A%7B%22is_active%22%3Atrue%2C%22__FILE%22%3A%22multi_instance%2Fdashboards%2Fdata_security_shared_template_dashboard.dashboard.lookml%22%2C%22__LINE_NUM%22%3A141%7D%2C%22order_items.order_count%22%3A%7B%22is_active%22%3Atrue%2C%22__FILE%22%3A%22multi_instance%2Fdashboards%2Fdata_security_shared_template_dashboard.dashboard.lookml%22%2C%22__LINE_NUM%22%3A143%7D%2C%22order_items.total_gross_margin%22%3A%7B%22is_active%22%3Atrue%2C%22__FILE%22%3A%22multi_instance%2Fdashboards%2Fdata_security_shared_template_dashboard.dashboard.lookml%22%2C%22__LINE_NUM%22%3A145%7D%7D%2C%22hidden_pivots%22%3A%7B%7D%2C%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A5%7D%5D%7D&dynamic_fields=%5B%5D",
+          "has_table_calculations": false,
+          "id": "mk8VVkJSc62bDtBW4nXCg8ZQJyCBZdTv",
+          "model": "external_data_model",
+          "limit": "500",
+          "column_limit": "50",
+          "dynamic_fields": "[]",
+          "query_timezone": null,
+          "quick_calcs": [
+
+          ],
+          "analysis_config": null,
+          "can": {
+            "can_clear_cache": true,
+            "cost_estimate": true,
+            "create": true,
+            "index": true,
+            "show": true,
+            "download": true,
+            "download_unlimited": true,
+            "edit_custom_fields": true,
+            "edit_table_calculations": true,
+            "explore": true,
+            "generate_drill_links": true,
+            "render": true,
+            "run": true,
+            "see_results": true,
+            "save": true,
+            "schedule": true,
+            "see_aggregate_table_lookml": true,
+            "see_derived_table_lookml": true,
+            "see_lookml": true,
+            "see_sql": true,
+            "send_all_results": true,
+            "use_custom_fields": true
+          }
+        },
+        "vis_config": {
+          "show_view_names": false,
+          "show_row_numbers": true,
+          "transpose": false,
+          "truncate_text": true,
+          "hide_totals": false,
+          "hide_row_totals": false,
+          "size_to_fit": true,
+          "table_theme": "transparent",
+          "limit_displayed_rows": false,
+          "enable_conditional_formatting": false,
+          "header_text_alignment": "left",
+          "header_font_size": "12",
+          "rows_font_size": "12",
+          "conditional_formatting_include_totals": false,
+          "conditional_formatting_include_nulls": false,
+          "type": "looker_grid",
+          "show_sql_query_menu_options": false,
+          "show_totals": true,
+          "show_row_totals": true,
+          "truncate_header": false,
+          "minimum_column_width": 75,
+          "series_column_widths": {
+            "products.name": 350
+          },
+          "series_cell_visualizations": {
+            "order_items.total_sale_price": {
+              "is_active": true,
+              "__FILE": "multi_instance/dashboards/data_security_shared_template_dashboard.dashboard.lookml",
+              "__LINE_NUM": 141
+            },
+            "order_items.order_count": {
+              "is_active": true,
+              "__FILE": "multi_instance/dashboards/data_security_shared_template_dashboard.dashboard.lookml",
+              "__LINE_NUM": 143
+            },
+            "order_items.total_gross_margin": {
+              "is_active": true,
+              "__FILE": "multi_instance/dashboards/data_security_shared_template_dashboard.dashboard.lookml",
+              "__LINE_NUM": 145
+            }
+          },
+          "hidden_pivots": {
+          },
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "plot_size_by_field": false,
+          "trellis": "",
+          "stacking": "",
+          "legend_position": "center",
+          "point_style": "none",
+          "show_value_labels": false,
+          "label_density": 25,
+          "x_axis_scale": "auto",
+          "y_axis_combined": true,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "defaults_version": 1,
+          "series_types": {
+          }
+        },
+        "filterables": [
+          {
+            "model": "external_data_model",
+            "view": "order_items",
+            "name": "",
+            "listen": [
+              {
+                "dashboard_filter_name": "Created Date",
+                "field": "order_items.created_date"
+              },
+              {
+                "dashboard_filter_name": "Brand",
+                "field": "products.brand"
+              }
+            ]
+          }
+        ],
+        "query_id": "mk8VVkJSc62bDtBW4nXCg8ZQJyCBZdTv"
+      },
+      "can": {
+        "can_clear_cache": true,
+        "create": true,
+        "destroy": true,
+        "update": true,
+        "explore": true,
+        "find_and_replace": true,
+        "show_errors": true,
+        "index": true,
+        "show": true,
+        "run": false,
+        "see_aggregate_table_lookml": true
+      },
+      "alerts": [
+
+      ]
+    }
+  ],
+  "dashboard_filters": [
+    {
+      "id": "92",
+      "dashboard_id": "36",
+      "name": "Created Date",
+      "title": "Created Date",
+      "type": "field_filter",
+      "explore": "order_items",
+      "dimension": "order_items.created_date",
+      "row": 0,
+      "allow_multiple_values": true,
+      "required": false,
+      "ui_config": {
+        "display": "inline",
+        "type": "relative_timeframes",
+        "options": [
+
+        ]
+      },
+      "model": "external_data_model",
+      "listens_to_filters": [
+
+      ],
+      "default_value": "365 day",
+      "field": {
+        "align": "left",
+        "can_filter": true,
+        "category": "dimension",
+        "default_filter_value": null,
+        "description": "Date and time the item was added to the order",
+        "enumerations": null,
+        "field_group_label": "Created Date",
+        "fill_style": "range",
+        "fiscal_month_offset": 0,
+        "has_allowed_values": false,
+        "hidden": false,
+        "is_filter": false,
+        "is_numeric": false,
+        "label": "Order Items Created Date",
+        "label_from_parameter": null,
+        "label_short": "Created Date",
+        "map_layer": null,
+        "name": "order_items.created_date",
+        "strict_value_format": false,
+        "requires_refresh_on_sort": false,
+        "sortable": true,
+        "suggestions": null,
+        "synonyms": [
+
+        ],
+        "tags": [
+
+        ],
+        "type": "date_date",
+        "user_attribute_filter_types": [
+          "datetime",
+          "advanced_filter_datetime"
+        ],
+        "value_format": null,
+        "value_format_name": null,
+        "view": "order_items",
+        "view_label": "Order Items",
+        "dynamic": false,
+        "week_start_day": "monday",
+        "original_view": "order_items",
+        "datatype": "TIMESTAMP",
+        "convert_tz": true,
+        "dimension_group": "order_items.created",
+        "error": null,
+        "field_group_variant": "Date",
+        "measure": false,
+        "parameter": false,
+        "primary_key": false,
+        "project_name": "multi_instance_prod_import",
+        "scope": "order_items",
+        "suggest_dimension": "order_items.created_date",
+        "suggest_explore": "order_items",
+        "suggestable": false,
+        "lookml_expression": null,
+        "is_fiscal": false,
+        "is_timeframe": true,
+        "can_time_filter": false,
+        "time_interval": {
+          "name": "day",
+          "count": 1
+        },
+        "lookml_link": "/projects/multi_instance_prod_import/files/imported_projects%2Fmulti_instance_dev%2Fviews%2Forder_items.view.lkml?line=11",
+        "period_over_period_params": null,
+        "permanent": null,
+        "source_file": "imported_projects/multi_instance_dev/views/order_items.view.lkml",
+        "source_file_path": "multi_instance_prod_import/imported_projects/multi_instance_dev/views/order_items.view.lkml",
+        "sql": "${TABLE}.created_at ",
+        "sql_case": null,
+        "filters": null,
+        "times_used": 0
+      },
+      "can": {
+        "create": true,
+        "destroy": true,
+        "update": true,
+        "find_and_replace": true,
+        "show_errors": true,
+        "index": true,
+        "show": true
+      }
+    },
+    {
+      "id": "93",
+      "dashboard_id": "36",
+      "name": "Brand",
+      "title": "Brand",
+      "type": "field_filter",
+      "explore": "order_items",
+      "dimension": "products.brand",
+      "row": 1,
+      "allow_multiple_values": true,
+      "required": false,
+      "ui_config": {
+        "display": "inline",
+        "type": "dropdown_menu"
+      },
+      "model": "external_data_model",
+      "listens_to_filters": [
+
+      ],
+      "default_value": "",
+      "field": {
+        "align": "left",
+        "can_filter": true,
+        "category": "dimension",
+        "default_filter_value": null,
+        "description": "",
+        "enumerations": null,
+        "field_group_label": null,
+        "fill_style": null,
+        "fiscal_month_offset": 0,
+        "has_allowed_values": false,
+        "hidden": false,
+        "is_filter": false,
+        "is_numeric": false,
+        "label": "Products Brand",
+        "label_from_parameter": null,
+        "label_short": "Brand",
+        "map_layer": null,
+        "name": "products.brand",
+        "strict_value_format": false,
+        "requires_refresh_on_sort": false,
+        "sortable": true,
+        "suggestions": null,
+        "synonyms": [
+
+        ],
+        "tags": [
+
+        ],
+        "type": "string",
+        "user_attribute_filter_types": [
+          "string",
+          "advanced_filter_string"
+        ],
+        "value_format": null,
+        "value_format_name": null,
+        "view": "products",
+        "view_label": "Products",
+        "dynamic": false,
+        "week_start_day": "monday",
+        "original_view": "products",
+        "datatype": "TIMESTAMP",
+        "convert_tz": true,
+        "dimension_group": null,
+        "error": null,
+        "field_group_variant": "Brand",
+        "measure": false,
+        "parameter": false,
+        "primary_key": false,
+        "project_name": "multi_instance_prod_import",
+        "scope": "products",
+        "suggest_dimension": "products.brand",
+        "suggest_explore": "order_items",
+        "suggestable": true,
+        "lookml_expression": null,
+        "is_fiscal": false,
+        "is_timeframe": false,
+        "can_time_filter": false,
+        "time_interval": null,
+        "lookml_link": "/projects/multi_instance_prod_import/files/imported_projects%2Fmulti_instance_dev%2Fviews%2Fproducts.view.lkml?line=10",
+        "period_over_period_params": null,
+        "permanent": null,
+        "source_file": "imported_projects/multi_instance_dev/views/products.view.lkml",
+        "source_file_path": "multi_instance_prod_import/imported_projects/multi_instance_dev/views/products.view.lkml",
+        "sql": "TRIM(${TABLE}.brand ) ",
+        "sql_case": null,
+        "filters": null,
+        "times_used": 0
+      },
+      "can": {
+        "create": true,
+        "destroy": true,
+        "update": true,
+        "find_and_replace": true,
+        "show_errors": true,
+        "index": true,
+        "show": true
+      }
+    }
+  ],
+  "dashboard_layouts": [
+    {
+      "id": "36",
+      "dashboard_id": "36",
+      "type": "newspaper",
+      "active": true,
+      "column_width": null,
+      "width": null,
+      "deleted": false,
+      "dashboard_title": "Spinoff Dashboard",
+      "dashboard_layout_components": [
+        {
+          "id": "297",
+          "dashboard_layout_id": "36",
+          "dashboard_element_id": "297",
+          "row": 0,
+          "column": 8,
+          "width": 16,
+          "height": 7,
+          "deleted": false,
+          "element_title": "Daily Sales",
+          "element_title_hidden": false,
+          "vis_type": "looker_column",
+          "granular_row": null,
+          "granular_column": null,
+          "granular_width": null,
+          "granular_height": null,
+          "can": {
+            "create": true,
+            "destroy": true,
+            "update": true,
+            "index": true,
+            "show": true
+          }
+        },
+        {
+          "id": "298",
+          "dashboard_layout_id": "36",
+          "dashboard_element_id": "298",
+          "row": 0,
+          "column": 0,
+          "width": 8,
+          "height": 7,
+          "deleted": false,
+          "element_title": "Sales by Age Tier",
+          "element_title_hidden": false,
+          "vis_type": "looker_column",
+          "granular_row": null,
+          "granular_column": null,
+          "granular_width": null,
+          "granular_height": null,
+          "can": {
+            "create": true,
+            "destroy": true,
+            "update": true,
+            "index": true,
+            "show": true
+          }
+        },
+        {
+          "id": "299",
+          "dashboard_layout_id": "36",
+          "dashboard_element_id": "299",
+          "row": 7,
+          "column": 0,
+          "width": 24,
+          "height": 7,
+          "deleted": false,
+          "element_title": "Top Categories",
+          "element_title_hidden": false,
+          "vis_type": "looker_grid",
+          "granular_row": null,
+          "granular_column": null,
+          "granular_width": null,
+          "granular_height": null,
+          "can": {
+            "create": true,
+            "destroy": true,
+            "update": true,
+            "index": true,
+            "show": true
+          }
+        }
+      ],
+      "label": null,
+      "description": null,
+      "order": -1,
+      "can": {
+        "create": true,
+        "destroy": true,
+        "update": true,
+        "index": true,
+        "show": true
+      }
+    }
+  ],
+  "deleted_at": null,
+  "deleter_id": null,
+  "edit_uri": null,
+  "enable_viz_full_screen": true,
+  "favorite_count": 0,
+  "filters_bar_collapsed": false,
+  "filters_location_top": true,
+  "last_accessed_at": "2026-01-27 19:53:34 UTC",
+  "updated_at": "2026-01-27 19:54:14 UTC",
+  "last_updater_id": "1",
+  "load_configuration": "cache_run",
+  "lookml_link_id": "external_data_model::data_security_shared_template_dashboard",
+  "show_filters_bar": null,
+  "show_title": null,
+  "text_tile_text_color": null,
+  "tile_background_color": null,
+  "tile_text_color": null,
+  "title_color": null,
+  "view_count": 2,
+  "url": "/dashboards/iXwvkSLZUoGBR6nViUBOg3",
+  "layout_granularity": null,
+  "folder": {
+    "name": "Testing",
+    "parent_id": "15",
+    "id": "16",
+    "content_metadata_id": "67",
+    "created_at": "2026-01-27 16:46:59 UTC",
+    "creator_id": "1",
+    "external_id": "",
+    "is_embed": false,
+    "is_embed_shared_root": false,
+    "is_embed_users_root": false,
+    "is_personal": false,
+    "is_personal_descendant": false,
+    "is_shared_root": false,
+    "is_users_root": false,
+    "can": {
+      "browse_spaces_as_embed_user": false,
+      "create": true,
+      "destroy": true,
+      "edit_content": true,
+      "index": true,
+      "show": true,
+      "move_content": true,
+      "save_shared_space_as_embed_user": true,
+      "see_admin_spaces": true,
+      "update": true
+    }
+  },
+  "folder_id": "16",
+  "content_favorite_id": null,
+  "id": "36",
+  "model": null,
+  "certification_metadata": null,
+  "deleted": false,
+  "last_viewed_at": "2026-01-27 19:54:29 UTC",
+  "last_updater_name": "Super Admin",
+  "user_name": "Super Admin",
+  "appearance": null,
+  "can": {
+    "certify": true,
+    "copy": true,
+    "index": true,
+    "show": true,
+    "create": true,
+    "destroy": true,
+    "move": true,
+    "recover": true,
+    "update": true,
+    "download": true,
+    "render": true,
+    "run": true,
+    "schedule": true,
+    "see_aggregate_table_lookml": true,
+    "see_lookml": true
+  }
+}
