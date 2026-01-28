@@ -50,4 +50,25 @@ jobs:
 
       - name: Sync Content
         run: |
-          ldeploy content export --env prod --folders 15 --local-target ./sync_data
+          ldeploy content export --env prod --folders 15 --local-target ./prod
+
+          ldeploy content export --env dev --folders 14 --local-target ./dev
+
+      - name: Commit and Push changes
+        run: |
+          # Configure the "user" so GitHub knows who is committing
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Add the exported JSON files
+          git add ./prod
+          git add ./dev
+          
+          # Only commit if there are actually changes to avoid errors
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Automated Looker backup: $(date +'%Y-%m-%d %H:%M:%S')"
+            git push
+          fi
+
