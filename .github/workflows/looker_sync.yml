@@ -1,0 +1,49 @@
+name: Scheduled Looker Sync
+
+on:
+  schedule:
+    # This runs at 00:00 UTC every day
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allows you to run it manually for testing
+
+jobs:
+  sync_looker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install looker-deployer
+        run: |
+          pip install looker-deployer
+
+      - name: Create looker.ini
+        # This creates the config file in the current directory on the VM
+        run: |
+          cat <<EOT > looker.ini
+          [dev]
+          base_url=${{ secrets.DEV_BASE_URL }}
+          client_id=${{ secrets.DEV_CLIENT_ID }}
+          client_secret=${{ secrets.DEV_CLIENT_SECRET }}
+          verify_ssl=True
+
+          [prod]
+          base_url=${{ secrets.PROD_BASE_URL }}
+          client_id=${{ secrets.PROD_CLIENT_ID }}
+          client_secret=${{ secrets.PROD_CLIENT_SECRET }}
+          verify_ssl=True
+          EOT
+
+      - name: Sync Content
+        run: |
+          # 1. Export from Prod to a local folder on the VM
+          ldeploy content export --env prod --folders 1 --local-target ./sync_data
+          
+          # 2. Import from that folder to Dev
+          ldeploy content import --env dev --folders ./sync_data --recursive
