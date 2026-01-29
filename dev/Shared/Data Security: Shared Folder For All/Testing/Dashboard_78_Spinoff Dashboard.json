@@ -21,7 +21,7 @@
       "dashboard_id": "78",
       "dashboard_layout_id": null,
       "edit_uri": null,
-      "id": "560",
+      "id": "569",
       "look": null,
       "look_id": null,
       "lookml_link_id": "",
@@ -34,18 +34,18 @@
         "view": "order_items",
         "fields": [
           "order_items.total_sale_price",
-          "order_items.created_date"
+          "order_items.created_month"
         ],
         "pivots": null,
         "fill_fields": [
-          "order_items.created_date"
+          "order_items.created_month"
         ],
         "filters": {
           "order_items.created_date": "365 days"
         },
         "filter_expression": null,
         "sorts": [
-          "order_items.created_date desc"
+          "order_items.created_month desc"
         ],
         "total": null,
         "row_total": null,
@@ -102,19 +102,21 @@
           ]
         },
         "visible_ui_sections": null,
-        "slug": "znDSwMb6kH6pdBT8Y4rJk4qwgJgpRzRm",
-        "client_id": "lH2zpirCZd2q8CFNnHtodU",
-        "share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/x/lH2zpirCZd2q8CFNnHtodU",
-        "expanded_share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A3%7D%5D%7D&origin=share-expanded",
-        "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A3%7D%5D%7D",
+        "slug": "Yq8st8BgD553XcWkMRCtHp35qcYRs7YZ",
+        "client_id": "QPEeBo8ZVc0TGMlgNyPCk1",
+        "share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/x/QPEeBo8ZVc0TGMlgNyPCk1",
+        "expanded_share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_month&fill_fields=order_items.created_month&f[order_items.created_date]=365+days&sorts=order_items.created_month+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A3%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_month&fill_fields=order_items.created_month&f[order_items.created_date]=365+days&sorts=order_items.created_month+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A3%7D%5D%7D&dynamic_fields=%5B%5D",
         "has_table_calculations": false,
-        "id": "znDSwMb6kH6pdBT8Y4rJk4qwgJgpRzRm",
+        "id": "Yq8st8BgD553XcWkMRCtHp35qcYRs7YZ",
         "model": "external_data_model",
         "limit": "500",
         "column_limit": "50",
-        "dynamic_fields": null,
+        "dynamic_fields": "[]",
         "query_timezone": null,
-        "quick_calcs": null,
+        "quick_calcs": [
+
+        ],
         "analysis_config": null,
         "can": {
           "can_clear_cache": true,
@@ -143,9 +145,9 @@
       },
       "refresh_interval": null,
       "refresh_interval_to_i": null,
-      "result_maker_id": "1030",
+      "result_maker_id": "1033",
       "subtitle_text": null,
-      "title": "Daily Sales",
+      "title": "Monthly Sales",
       "title_hidden": false,
       "title_text": null,
       "type": "vis",
@@ -155,12 +157,12 @@
       "subtitle_text_as_html": null,
       "extension_id": null,
       "aria_description": null,
-      "query_id": "znDSwMb6kH6pdBT8Y4rJk4qwgJgpRzRm",
+      "query_id": "Yq8st8BgD553XcWkMRCtHp35qcYRs7YZ",
       "result_maker": {
-        "id": "1030",
-        "dynamic_fields": null,
+        "id": "1033",
+        "dynamic_fields": "[]",
         "sorts": [
-          "order_items.created_date desc"
+          "order_items.created_month desc"
         ],
         "merge_result_id": null,
         "total": false,
@@ -169,18 +171,18 @@
           "view": "order_items",
           "fields": [
             "order_items.total_sale_price",
-            "order_items.created_date"
+            "order_items.created_month"
           ],
           "pivots": null,
           "fill_fields": [
-            "order_items.created_date"
+            "order_items.created_month"
           ],
           "filters": {
             "order_items.created_date": "365 days"
           },
           "filter_expression": null,
           "sorts": [
-            "order_items.created_date desc"
+            "order_items.created_month desc"
           ],
           "total": null,
           "row_total": null,
@@ -237,19 +239,21 @@
             ]
           },
           "visible_ui_sections": null,
-          "slug": "znDSwMb6kH6pdBT8Y4rJk4qwgJgpRzRm",
-          "client_id": "lH2zpirCZd2q8CFNnHtodU",
-          "share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/x/lH2zpirCZd2q8CFNnHtodU",
-          "expanded_share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A3%7D%5D%7D&origin=share-expanded",
-          "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A3%7D%5D%7D",
+          "slug": "Yq8st8BgD553XcWkMRCtHp35qcYRs7YZ",
+          "client_id": "QPEeBo8ZVc0TGMlgNyPCk1",
+          "share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/x/QPEeBo8ZVc0TGMlgNyPCk1",
+          "expanded_share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_month&fill_fields=order_items.created_month&f[order_items.created_date]=365+days&sorts=order_items.created_month+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A3%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+          "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_month&fill_fields=order_items.created_month&f[order_items.created_date]=365+days&sorts=order_items.created_month+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A3%7D%5D%7D&dynamic_fields=%5B%5D",
           "has_table_calculations": false,
-          "id": "znDSwMb6kH6pdBT8Y4rJk4qwgJgpRzRm",
+          "id": "Yq8st8BgD553XcWkMRCtHp35qcYRs7YZ",
           "model": "external_data_model",
           "limit": "500",
           "column_limit": "50",
-          "dynamic_fields": null,
+          "dynamic_fields": "[]",
           "query_timezone": null,
-          "quick_calcs": null,
+          "quick_calcs": [
+
+          ],
           "analysis_config": null,
           "can": {
             "can_clear_cache": true,
@@ -328,7 +332,7 @@
             ]
           }
         ],
-        "query_id": "znDSwMb6kH6pdBT8Y4rJk4qwgJgpRzRm"
+        "query_id": "Yq8st8BgD553XcWkMRCtHp35qcYRs7YZ"
       },
       "can": {
         "can_clear_cache": true,
@@ -353,7 +357,7 @@
       "dashboard_id": "78",
       "dashboard_layout_id": null,
       "edit_uri": null,
-      "id": "561",
+      "id": "570",
       "look": null,
       "look_id": null,
       "lookml_link_id": "",
@@ -393,7 +397,7 @@
           "y_axis_tick_density": "default",
           "y_axis_tick_density_custom": 5,
           "show_x_axis_label": true,
-          "show_x_axis_ticks": true,
+          "show_x_axis_ticks": false,
           "y_axis_scale_mode": "linear",
           "x_axis_reversed": false,
           "y_axis_reversed": false,
@@ -504,13 +508,13 @@
           ]
         },
         "visible_ui_sections": null,
-        "slug": "dC6Cdf82P4XhNxBpK5rhCNnypTPDqhtr",
-        "client_id": "0nz0c5BMNRtXYB14VvDvTc",
-        "share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/x/0nz0c5BMNRtXYB14VvDvTc",
-        "expanded_share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,users.age_tier&pivots=users.age_tier&fill_fields=users.age_tier&f[order_items.created_date]=365+days&sorts=users.age_tier&limit=10&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22percent%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Atrue%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22orientation%22%3A%22left%22%2C%22series%22%3A%5B%7B%22axisId%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22id%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22name%22%3A%22Below+0%22%7D%2C%7B%22axisId%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22id%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22name%22%3A%220+to+9%22%7D%2C%7B%22axisId%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22id%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22name%22%3A%2210+to+19%22%7D%2C%7B%22axisId%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22id%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22name%22%3A%2220+to+29%22%7D%2C%7B%22axisId%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22id%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22name%22%3A%2230+to+39%22%7D%2C%7B%22axisId%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22id%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22name%22%3A%2240+to+49%22%7D%2C%7B%22axisId%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22id%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22name%22%3A%2250+to+59%22%7D%2C%7B%22axisId%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22id%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22name%22%3A%2260+to+69%22%7D%2C%7B%22axisId%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22id%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22name%22%3A%2270+or+Above%22%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Afalse%2C%22unpinAxis%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%7D%5D%2C%22x_axis_zoom%22%3Afalse%2C%22y_axis_zoom%22%3Afalse%2C%22hide_legend%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labVal%22%2C%22type%22%3A%22looker_column%22%2C%22inner_radius%22%3A50%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22defaults_version%22%3A1%2C%22hidden_pivots%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
-        "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,users.age_tier&pivots=users.age_tier&fill_fields=users.age_tier&f[order_items.created_date]=365+days&sorts=users.age_tier&limit=10&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22percent%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Atrue%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22orientation%22%3A%22left%22%2C%22series%22%3A%5B%7B%22axisId%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22id%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22name%22%3A%22Below+0%22%7D%2C%7B%22axisId%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22id%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22name%22%3A%220+to+9%22%7D%2C%7B%22axisId%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22id%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22name%22%3A%2210+to+19%22%7D%2C%7B%22axisId%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22id%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22name%22%3A%2220+to+29%22%7D%2C%7B%22axisId%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22id%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22name%22%3A%2230+to+39%22%7D%2C%7B%22axisId%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22id%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22name%22%3A%2240+to+49%22%7D%2C%7B%22axisId%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22id%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22name%22%3A%2250+to+59%22%7D%2C%7B%22axisId%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22id%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22name%22%3A%2260+to+69%22%7D%2C%7B%22axisId%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22id%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22name%22%3A%2270+or+Above%22%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Afalse%2C%22unpinAxis%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%7D%5D%2C%22x_axis_zoom%22%3Afalse%2C%22y_axis_zoom%22%3Afalse%2C%22hide_legend%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labVal%22%2C%22type%22%3A%22looker_column%22%2C%22inner_radius%22%3A50%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22defaults_version%22%3A1%2C%22hidden_pivots%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+        "slug": "BpZtZtRRjXyc5WwDVH2s82TyP3yMDBQt",
+        "client_id": "pv8buc5XuVbPwgHm4RhaMJ",
+        "share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/x/pv8buc5XuVbPwgHm4RhaMJ",
+        "expanded_share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,users.age_tier&pivots=users.age_tier&fill_fields=users.age_tier&f[order_items.created_date]=365+days&sorts=users.age_tier&limit=10&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Afalse%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22percent%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Atrue%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22orientation%22%3A%22left%22%2C%22series%22%3A%5B%7B%22axisId%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22id%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22name%22%3A%22Below+0%22%7D%2C%7B%22axisId%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22id%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22name%22%3A%220+to+9%22%7D%2C%7B%22axisId%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22id%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22name%22%3A%2210+to+19%22%7D%2C%7B%22axisId%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22id%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22name%22%3A%2220+to+29%22%7D%2C%7B%22axisId%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22id%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22name%22%3A%2230+to+39%22%7D%2C%7B%22axisId%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22id%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22name%22%3A%2240+to+49%22%7D%2C%7B%22axisId%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22id%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22name%22%3A%2250+to+59%22%7D%2C%7B%22axisId%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22id%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22name%22%3A%2260+to+69%22%7D%2C%7B%22axisId%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22id%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22name%22%3A%2270+or+Above%22%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Afalse%2C%22unpinAxis%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%7D%5D%2C%22x_axis_zoom%22%3Afalse%2C%22y_axis_zoom%22%3Afalse%2C%22hide_legend%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labVal%22%2C%22type%22%3A%22looker_column%22%2C%22inner_radius%22%3A50%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22defaults_version%22%3A1%2C%22hidden_pivots%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+        "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,users.age_tier&pivots=users.age_tier&fill_fields=users.age_tier&f[order_items.created_date]=365+days&sorts=users.age_tier&limit=10&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Afalse%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22percent%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Atrue%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22orientation%22%3A%22left%22%2C%22series%22%3A%5B%7B%22axisId%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22id%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22name%22%3A%22Below+0%22%7D%2C%7B%22axisId%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22id%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22name%22%3A%220+to+9%22%7D%2C%7B%22axisId%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22id%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22name%22%3A%2210+to+19%22%7D%2C%7B%22axisId%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22id%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22name%22%3A%2220+to+29%22%7D%2C%7B%22axisId%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22id%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22name%22%3A%2230+to+39%22%7D%2C%7B%22axisId%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22id%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22name%22%3A%2240+to+49%22%7D%2C%7B%22axisId%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22id%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22name%22%3A%2250+to+59%22%7D%2C%7B%22axisId%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22id%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22name%22%3A%2260+to+69%22%7D%2C%7B%22axisId%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22id%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22name%22%3A%2270+or+Above%22%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Afalse%2C%22unpinAxis%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%7D%5D%2C%22x_axis_zoom%22%3Afalse%2C%22y_axis_zoom%22%3Afalse%2C%22hide_legend%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labVal%22%2C%22type%22%3A%22looker_column%22%2C%22inner_radius%22%3A50%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22defaults_version%22%3A1%2C%22hidden_pivots%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
         "has_table_calculations": false,
-        "id": "dC6Cdf82P4XhNxBpK5rhCNnypTPDqhtr",
+        "id": "BpZtZtRRjXyc5WwDVH2s82TyP3yMDBQt",
         "model": "external_data_model",
         "limit": "10",
         "column_limit": "50",
@@ -547,7 +551,7 @@
       },
       "refresh_interval": null,
       "refresh_interval_to_i": null,
-      "result_maker_id": "1031",
+      "result_maker_id": "1034",
       "subtitle_text": null,
       "title": "Sales by Age Tier",
       "title_hidden": false,
@@ -559,9 +563,9 @@
       "subtitle_text_as_html": null,
       "extension_id": null,
       "aria_description": null,
-      "query_id": "dC6Cdf82P4XhNxBpK5rhCNnypTPDqhtr",
+      "query_id": "BpZtZtRRjXyc5WwDVH2s82TyP3yMDBQt",
       "result_maker": {
-        "id": "1031",
+        "id": "1034",
         "dynamic_fields": "[]",
         "sorts": [
           "users.age_tier"
@@ -600,7 +604,7 @@
             "y_axis_tick_density": "default",
             "y_axis_tick_density_custom": 5,
             "show_x_axis_label": true,
-            "show_x_axis_ticks": true,
+            "show_x_axis_ticks": false,
             "y_axis_scale_mode": "linear",
             "x_axis_reversed": false,
             "y_axis_reversed": false,
@@ -711,13 +715,13 @@
             ]
           },
           "visible_ui_sections": null,
-          "slug": "dC6Cdf82P4XhNxBpK5rhCNnypTPDqhtr",
-          "client_id": "0nz0c5BMNRtXYB14VvDvTc",
-          "share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/x/0nz0c5BMNRtXYB14VvDvTc",
-          "expanded_share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,users.age_tier&pivots=users.age_tier&fill_fields=users.age_tier&f[order_items.created_date]=365+days&sorts=users.age_tier&limit=10&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22percent%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Atrue%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22orientation%22%3A%22left%22%2C%22series%22%3A%5B%7B%22axisId%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22id%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22name%22%3A%22Below+0%22%7D%2C%7B%22axisId%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22id%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22name%22%3A%220+to+9%22%7D%2C%7B%22axisId%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22id%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22name%22%3A%2210+to+19%22%7D%2C%7B%22axisId%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22id%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22name%22%3A%2220+to+29%22%7D%2C%7B%22axisId%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22id%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22name%22%3A%2230+to+39%22%7D%2C%7B%22axisId%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22id%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22name%22%3A%2240+to+49%22%7D%2C%7B%22axisId%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22id%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22name%22%3A%2250+to+59%22%7D%2C%7B%22axisId%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22id%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22name%22%3A%2260+to+69%22%7D%2C%7B%22axisId%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22id%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22name%22%3A%2270+or+Above%22%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Afalse%2C%22unpinAxis%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%7D%5D%2C%22x_axis_zoom%22%3Afalse%2C%22y_axis_zoom%22%3Afalse%2C%22hide_legend%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labVal%22%2C%22type%22%3A%22looker_column%22%2C%22inner_radius%22%3A50%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22defaults_version%22%3A1%2C%22hidden_pivots%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
-          "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,users.age_tier&pivots=users.age_tier&fill_fields=users.age_tier&f[order_items.created_date]=365+days&sorts=users.age_tier&limit=10&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22percent%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Atrue%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22orientation%22%3A%22left%22%2C%22series%22%3A%5B%7B%22axisId%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22id%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22name%22%3A%22Below+0%22%7D%2C%7B%22axisId%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22id%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22name%22%3A%220+to+9%22%7D%2C%7B%22axisId%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22id%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22name%22%3A%2210+to+19%22%7D%2C%7B%22axisId%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22id%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22name%22%3A%2220+to+29%22%7D%2C%7B%22axisId%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22id%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22name%22%3A%2230+to+39%22%7D%2C%7B%22axisId%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22id%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22name%22%3A%2240+to+49%22%7D%2C%7B%22axisId%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22id%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22name%22%3A%2250+to+59%22%7D%2C%7B%22axisId%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22id%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22name%22%3A%2260+to+69%22%7D%2C%7B%22axisId%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22id%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22name%22%3A%2270+or+Above%22%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Afalse%2C%22unpinAxis%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%7D%5D%2C%22x_axis_zoom%22%3Afalse%2C%22y_axis_zoom%22%3Afalse%2C%22hide_legend%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labVal%22%2C%22type%22%3A%22looker_column%22%2C%22inner_radius%22%3A50%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22defaults_version%22%3A1%2C%22hidden_pivots%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
+          "slug": "BpZtZtRRjXyc5WwDVH2s82TyP3yMDBQt",
+          "client_id": "pv8buc5XuVbPwgHm4RhaMJ",
+          "share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/x/pv8buc5XuVbPwgHm4RhaMJ",
+          "expanded_share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,users.age_tier&pivots=users.age_tier&fill_fields=users.age_tier&f[order_items.created_date]=365+days&sorts=users.age_tier&limit=10&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Afalse%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22percent%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Atrue%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22orientation%22%3A%22left%22%2C%22series%22%3A%5B%7B%22axisId%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22id%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22name%22%3A%22Below+0%22%7D%2C%7B%22axisId%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22id%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22name%22%3A%220+to+9%22%7D%2C%7B%22axisId%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22id%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22name%22%3A%2210+to+19%22%7D%2C%7B%22axisId%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22id%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22name%22%3A%2220+to+29%22%7D%2C%7B%22axisId%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22id%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22name%22%3A%2230+to+39%22%7D%2C%7B%22axisId%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22id%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22name%22%3A%2240+to+49%22%7D%2C%7B%22axisId%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22id%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22name%22%3A%2250+to+59%22%7D%2C%7B%22axisId%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22id%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22name%22%3A%2260+to+69%22%7D%2C%7B%22axisId%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22id%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22name%22%3A%2270+or+Above%22%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Afalse%2C%22unpinAxis%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%7D%5D%2C%22x_axis_zoom%22%3Afalse%2C%22y_axis_zoom%22%3Afalse%2C%22hide_legend%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labVal%22%2C%22type%22%3A%22looker_column%22%2C%22inner_radius%22%3A50%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22defaults_version%22%3A1%2C%22hidden_pivots%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D&origin=share-expanded",
+          "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,users.age_tier&pivots=users.age_tier&fill_fields=users.age_tier&f[order_items.created_date]=365+days&sorts=users.age_tier&limit=10&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Afalse%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22percent%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Atrue%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22y_axes%22%3A%5B%7B%22label%22%3A%22%22%2C%22orientation%22%3A%22left%22%2C%22series%22%3A%5B%7B%22axisId%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22id%22%3A%22Below+0+-+0+-+order_items.total_sale_price%22%2C%22name%22%3A%22Below+0%22%7D%2C%7B%22axisId%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22id%22%3A%220+to+9+-+1+-+order_items.total_sale_price%22%2C%22name%22%3A%220+to+9%22%7D%2C%7B%22axisId%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22id%22%3A%2210+to+19+-+2+-+order_items.total_sale_price%22%2C%22name%22%3A%2210+to+19%22%7D%2C%7B%22axisId%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22id%22%3A%2220+to+29+-+3+-+order_items.total_sale_price%22%2C%22name%22%3A%2220+to+29%22%7D%2C%7B%22axisId%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22id%22%3A%2230+to+39+-+4+-+order_items.total_sale_price%22%2C%22name%22%3A%2230+to+39%22%7D%2C%7B%22axisId%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22id%22%3A%2240+to+49+-+5+-+order_items.total_sale_price%22%2C%22name%22%3A%2240+to+49%22%7D%2C%7B%22axisId%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22id%22%3A%2250+to+59+-+6+-+order_items.total_sale_price%22%2C%22name%22%3A%2250+to+59%22%7D%2C%7B%22axisId%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22id%22%3A%2260+to+69+-+7+-+order_items.total_sale_price%22%2C%22name%22%3A%2260+to+69%22%7D%2C%7B%22axisId%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22id%22%3A%2270+or+Above+-+8+-+order_items.total_sale_price%22%2C%22name%22%3A%2270+or+Above%22%7D%5D%2C%22showLabels%22%3Atrue%2C%22showValues%22%3Afalse%2C%22unpinAxis%22%3Afalse%2C%22tickDensity%22%3A%22default%22%2C%22tickDensityCustom%22%3A5%2C%22type%22%3A%22linear%22%7D%5D%2C%22x_axis_zoom%22%3Afalse%2C%22y_axis_zoom%22%3Afalse%2C%22hide_legend%22%3Afalse%2C%22series_types%22%3A%7B%7D%2C%22value_labels%22%3A%22legend%22%2C%22label_type%22%3A%22labVal%22%2C%22type%22%3A%22looker_column%22%2C%22inner_radius%22%3A50%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22defaults_version%22%3A1%2C%22hidden_pivots%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%2C%22error%22%3Afalse%7D%5D%7D&dynamic_fields=%5B%5D",
           "has_table_calculations": false,
-          "id": "dC6Cdf82P4XhNxBpK5rhCNnypTPDqhtr",
+          "id": "BpZtZtRRjXyc5WwDVH2s82TyP3yMDBQt",
           "model": "external_data_model",
           "limit": "10",
           "column_limit": "50",
@@ -761,7 +765,7 @@
           "y_axis_tick_density": "default",
           "y_axis_tick_density_custom": 5,
           "show_x_axis_label": true,
-          "show_x_axis_ticks": true,
+          "show_x_axis_ticks": false,
           "y_axis_scale_mode": "linear",
           "x_axis_reversed": false,
           "y_axis_reversed": false,
@@ -871,7 +875,7 @@
             ]
           }
         ],
-        "query_id": "dC6Cdf82P4XhNxBpK5rhCNnypTPDqhtr"
+        "query_id": "BpZtZtRRjXyc5WwDVH2s82TyP3yMDBQt"
       },
       "can": {
         "can_clear_cache": true,
@@ -896,7 +900,7 @@
       "dashboard_id": "78",
       "dashboard_layout_id": null,
       "edit_uri": null,
-      "id": "562",
+      "id": "571",
       "look": null,
       "look_id": null,
       "lookml_link_id": "",
@@ -1337,11 +1341,343 @@
       "alerts": [
 
       ]
+    },
+    {
+      "body_text": null,
+      "body_text_as_html": null,
+      "dashboard_id": "78",
+      "dashboard_layout_id": null,
+      "edit_uri": null,
+      "id": "572",
+      "look": null,
+      "look_id": null,
+      "lookml_link_id": "",
+      "merge_result_id": null,
+      "note_display": null,
+      "note_state": null,
+      "note_text": null,
+      "note_text_as_html": null,
+      "query": {
+        "view": "order_items",
+        "fields": [
+          "order_items.total_sale_price",
+          "order_items.created_date"
+        ],
+        "pivots": null,
+        "fill_fields": [
+          "order_items.created_date"
+        ],
+        "filters": {
+          "order_items.created_date": "365 days"
+        },
+        "filter_expression": null,
+        "sorts": [
+          "order_items.created_date desc"
+        ],
+        "total": null,
+        "row_total": null,
+        "subtotals": null,
+        "vis_config": {
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "plot_size_by_field": false,
+          "trellis": "",
+          "stacking": "",
+          "limit_displayed_rows": false,
+          "legend_position": "center",
+          "point_style": "none",
+          "show_value_labels": false,
+          "label_density": 25,
+          "x_axis_scale": "auto",
+          "y_axis_combined": true,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "show_null_points": true,
+          "interpolation": "linear",
+          "type": "looker_column",
+          "defaults_version": 1,
+          "series_types": {
+          }
+        },
+        "filter_config": {
+          "order_items.created_date": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "365",
+                  "unit": "day"
+                },
+                {
+                }
+              ],
+              "id": 3
+            }
+          ]
+        },
+        "visible_ui_sections": null,
+        "slug": "znDSwMb6kH6pdBT8Y4rJk4qwgJgpRzRm",
+        "client_id": "lH2zpirCZd2q8CFNnHtodU",
+        "share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/x/lH2zpirCZd2q8CFNnHtodU",
+        "expanded_share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A3%7D%5D%7D&origin=share-expanded",
+        "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A3%7D%5D%7D",
+        "has_table_calculations": false,
+        "id": "znDSwMb6kH6pdBT8Y4rJk4qwgJgpRzRm",
+        "model": "external_data_model",
+        "limit": "500",
+        "column_limit": "50",
+        "dynamic_fields": null,
+        "query_timezone": null,
+        "quick_calcs": null,
+        "analysis_config": null,
+        "can": {
+          "can_clear_cache": true,
+          "cost_estimate": true,
+          "create": true,
+          "index": true,
+          "show": true,
+          "download": true,
+          "download_unlimited": true,
+          "edit_custom_fields": true,
+          "edit_table_calculations": true,
+          "explore": true,
+          "generate_drill_links": true,
+          "render": true,
+          "run": true,
+          "see_results": true,
+          "save": true,
+          "schedule": true,
+          "see_aggregate_table_lookml": true,
+          "see_derived_table_lookml": true,
+          "see_lookml": true,
+          "see_sql": true,
+          "send_all_results": true,
+          "use_custom_fields": true
+        }
+      },
+      "refresh_interval": null,
+      "refresh_interval_to_i": null,
+      "result_maker_id": "1030",
+      "subtitle_text": null,
+      "title": "Daily Sales (Copy)",
+      "title_hidden": false,
+      "title_text": null,
+      "type": "vis",
+      "alert_count": 0,
+      "rich_content_json": null,
+      "title_text_as_html": null,
+      "subtitle_text_as_html": null,
+      "extension_id": null,
+      "aria_description": null,
+      "query_id": "znDSwMb6kH6pdBT8Y4rJk4qwgJgpRzRm",
+      "result_maker": {
+        "id": "1030",
+        "dynamic_fields": null,
+        "sorts": [
+          "order_items.created_date desc"
+        ],
+        "merge_result_id": null,
+        "total": false,
+        "sql_query_id": "",
+        "query": {
+          "view": "order_items",
+          "fields": [
+            "order_items.total_sale_price",
+            "order_items.created_date"
+          ],
+          "pivots": null,
+          "fill_fields": [
+            "order_items.created_date"
+          ],
+          "filters": {
+            "order_items.created_date": "365 days"
+          },
+          "filter_expression": null,
+          "sorts": [
+            "order_items.created_date desc"
+          ],
+          "total": null,
+          "row_total": null,
+          "subtotals": null,
+          "vis_config": {
+            "x_axis_gridlines": false,
+            "y_axis_gridlines": true,
+            "show_view_names": false,
+            "show_y_axis_labels": true,
+            "show_y_axis_ticks": true,
+            "y_axis_tick_density": "default",
+            "y_axis_tick_density_custom": 5,
+            "show_x_axis_label": true,
+            "show_x_axis_ticks": true,
+            "y_axis_scale_mode": "linear",
+            "x_axis_reversed": false,
+            "y_axis_reversed": false,
+            "plot_size_by_field": false,
+            "trellis": "",
+            "stacking": "",
+            "limit_displayed_rows": false,
+            "legend_position": "center",
+            "point_style": "none",
+            "show_value_labels": false,
+            "label_density": 25,
+            "x_axis_scale": "auto",
+            "y_axis_combined": true,
+            "ordering": "none",
+            "show_null_labels": false,
+            "show_totals_labels": false,
+            "show_silhouette": false,
+            "totals_color": "#808080",
+            "show_null_points": true,
+            "interpolation": "linear",
+            "type": "looker_column",
+            "defaults_version": 1,
+            "series_types": {
+            }
+          },
+          "filter_config": {
+            "order_items.created_date": [
+              {
+                "type": "past",
+                "values": [
+                  {
+                    "constant": "365",
+                    "unit": "day"
+                  },
+                  {
+                  }
+                ],
+                "id": 3
+              }
+            ]
+          },
+          "visible_ui_sections": null,
+          "slug": "znDSwMb6kH6pdBT8Y4rJk4qwgJgpRzRm",
+          "client_id": "lH2zpirCZd2q8CFNnHtodU",
+          "share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/x/lH2zpirCZd2q8CFNnHtodU",
+          "expanded_share_url": "https://7d9da728-3eaf-4944-965c-d1d56538803c.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A3%7D%5D%7D&origin=share-expanded",
+          "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%2C%22series_types%22%3A%7B%7D%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A3%7D%5D%7D",
+          "has_table_calculations": false,
+          "id": "znDSwMb6kH6pdBT8Y4rJk4qwgJgpRzRm",
+          "model": "external_data_model",
+          "limit": "500",
+          "column_limit": "50",
+          "dynamic_fields": null,
+          "query_timezone": null,
+          "quick_calcs": null,
+          "analysis_config": null,
+          "can": {
+            "can_clear_cache": true,
+            "cost_estimate": true,
+            "create": true,
+            "index": true,
+            "show": true,
+            "download": true,
+            "download_unlimited": true,
+            "edit_custom_fields": true,
+            "edit_table_calculations": true,
+            "explore": true,
+            "generate_drill_links": true,
+            "render": true,
+            "run": true,
+            "see_results": true,
+            "save": true,
+            "schedule": true,
+            "see_aggregate_table_lookml": true,
+            "see_derived_table_lookml": true,
+            "see_lookml": true,
+            "see_sql": true,
+            "send_all_results": true,
+            "use_custom_fields": true
+          }
+        },
+        "vis_config": {
+          "x_axis_gridlines": false,
+          "y_axis_gridlines": true,
+          "show_view_names": false,
+          "show_y_axis_labels": true,
+          "show_y_axis_ticks": true,
+          "y_axis_tick_density": "default",
+          "y_axis_tick_density_custom": 5,
+          "show_x_axis_label": true,
+          "show_x_axis_ticks": true,
+          "y_axis_scale_mode": "linear",
+          "x_axis_reversed": false,
+          "y_axis_reversed": false,
+          "plot_size_by_field": false,
+          "trellis": "",
+          "stacking": "",
+          "limit_displayed_rows": false,
+          "legend_position": "center",
+          "point_style": "none",
+          "show_value_labels": false,
+          "label_density": 25,
+          "x_axis_scale": "auto",
+          "y_axis_combined": true,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "show_null_points": true,
+          "interpolation": "linear",
+          "type": "looker_column",
+          "defaults_version": 1,
+          "series_types": {
+          }
+        },
+        "filterables": [
+          {
+            "model": "external_data_model",
+            "view": "order_items",
+            "name": "",
+            "listen": [
+              {
+                "dashboard_filter_name": "Created Date",
+                "field": "order_items.created_date"
+              },
+              {
+                "dashboard_filter_name": "Brand",
+                "field": "products.brand"
+              }
+            ]
+          }
+        ],
+        "query_id": "znDSwMb6kH6pdBT8Y4rJk4qwgJgpRzRm"
+      },
+      "can": {
+        "can_clear_cache": true,
+        "create": true,
+        "destroy": true,
+        "update": true,
+        "explore": true,
+        "find_and_replace": true,
+        "show_errors": true,
+        "index": true,
+        "show": true,
+        "run": false,
+        "see_aggregate_table_lookml": true
+      },
+      "alerts": [
+
+      ]
     }
   ],
   "dashboard_filters": [
     {
-      "id": "162",
+      "id": "166",
       "dashboard_id": "78",
       "name": "Created Date",
       "title": "Created Date",
@@ -1446,7 +1782,7 @@
       }
     },
     {
-      "id": "163",
+      "id": "167",
       "dashboard_id": "78",
       "name": "Brand",
       "title": "Brand",
@@ -1557,15 +1893,15 @@
       "dashboard_title": "Spinoff Dashboard",
       "dashboard_layout_components": [
         {
-          "id": "560",
+          "id": "569",
           "dashboard_layout_id": "78",
-          "dashboard_element_id": "560",
+          "dashboard_element_id": "569",
           "row": 0,
           "column": 8,
           "width": 16,
           "height": 7,
           "deleted": false,
-          "element_title": "Daily Sales",
+          "element_title": "Monthly Sales",
           "element_title_hidden": false,
           "vis_type": "looker_column",
           "granular_row": null,
@@ -1581,9 +1917,9 @@
           }
         },
         {
-          "id": "561",
+          "id": "570",
           "dashboard_layout_id": "78",
-          "dashboard_element_id": "561",
+          "dashboard_element_id": "570",
           "row": 0,
           "column": 0,
           "width": 8,
@@ -1605,9 +1941,9 @@
           }
         },
         {
-          "id": "562",
+          "id": "571",
           "dashboard_layout_id": "78",
-          "dashboard_element_id": "562",
+          "dashboard_element_id": "571",
           "row": 7,
           "column": 0,
           "width": 24,
@@ -1616,6 +1952,30 @@
           "element_title": "Top Categories",
           "element_title_hidden": false,
           "vis_type": "looker_grid",
+          "granular_row": null,
+          "granular_column": null,
+          "granular_width": null,
+          "granular_height": null,
+          "can": {
+            "create": true,
+            "destroy": true,
+            "update": true,
+            "index": true,
+            "show": true
+          }
+        },
+        {
+          "id": "572",
+          "dashboard_layout_id": "78",
+          "dashboard_element_id": "572",
+          "row": 14,
+          "column": 0,
+          "width": 16,
+          "height": 7,
+          "deleted": false,
+          "element_title": "Daily Sales (Copy)",
+          "element_title_hidden": false,
+          "vis_type": "looker_column",
           "granular_row": null,
           "granular_column": null,
           "granular_width": null,
@@ -1648,8 +2008,8 @@
   "favorite_count": 0,
   "filters_bar_collapsed": false,
   "filters_location_top": true,
-  "last_accessed_at": "2026-01-28 22:49:37 UTC",
-  "updated_at": "2026-01-27 18:43:30 UTC",
+  "last_accessed_at": "2026-01-28 22:51:03 UTC",
+  "updated_at": "2026-01-28 22:50:41 UTC",
   "last_updater_id": "1",
   "load_configuration": "cache_run",
   "lookml_link_id": "external_data_model::data_security_shared_template_dashboard",
@@ -1659,7 +2019,7 @@
   "tile_background_color": null,
   "tile_text_color": null,
   "title_color": null,
-  "view_count": 2,
+  "view_count": 3,
   "url": "/dashboards/iXwvkSLZUoGBR6nViUBOg3",
   "layout_granularity": null,
   "folder": {
@@ -1696,7 +2056,7 @@
   "model": null,
   "certification_metadata": null,
   "deleted": false,
-  "last_viewed_at": "2026-01-28 22:50:03 UTC",
+  "last_viewed_at": "2026-01-28 22:52:18 UTC",
   "last_updater_name": "Super Admin",
   "user_name": "Super Admin",
   "appearance": null,
