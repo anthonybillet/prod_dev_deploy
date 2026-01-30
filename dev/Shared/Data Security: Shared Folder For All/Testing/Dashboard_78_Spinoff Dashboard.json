@@ -21,7 +21,7 @@
       "dashboard_id": "78",
       "dashboard_layout_id": null,
       "edit_uri": null,
-      "id": "579",
+      "id": "588",
       "look": null,
       "look_id": null,
       "lookml_link_id": "",
@@ -357,7 +357,7 @@
       "dashboard_id": "78",
       "dashboard_layout_id": null,
       "edit_uri": null,
-      "id": "580",
+      "id": "589",
       "look": null,
       "look_id": null,
       "lookml_link_id": "",
@@ -900,7 +900,7 @@
       "dashboard_id": "78",
       "dashboard_layout_id": null,
       "edit_uri": null,
-      "id": "581",
+      "id": "590",
       "look": null,
       "look_id": null,
       "lookml_link_id": "",
@@ -1345,7 +1345,7 @@
   ],
   "dashboard_filters": [
     {
-      "id": "170",
+      "id": "174",
       "dashboard_id": "78",
       "name": "Created Date",
       "title": "Created Date",
@@ -1450,7 +1450,7 @@
       }
     },
     {
-      "id": "171",
+      "id": "175",
       "dashboard_id": "78",
       "name": "Brand",
       "title": "Brand",
@@ -1561,9 +1561,9 @@
       "dashboard_title": "Spinoff Dashboard",
       "dashboard_layout_components": [
         {
-          "id": "579",
+          "id": "588",
           "dashboard_layout_id": "78",
-          "dashboard_element_id": "579",
+          "dashboard_element_id": "588",
           "row": 0,
           "column": 8,
           "width": 16,
@@ -1585,9 +1585,9 @@
           }
         },
         {
-          "id": "580",
+          "id": "589",
           "dashboard_layout_id": "78",
-          "dashboard_element_id": "580",
+          "dashboard_element_id": "589",
           "row": 0,
           "column": 0,
           "width": 8,
@@ -1609,9 +1609,9 @@
           }
         },
         {
-          "id": "581",
+          "id": "590",
           "dashboard_layout_id": "78",
-          "dashboard_element_id": "581",
+          "dashboard_element_id": "590",
           "row": 7,
           "column": 0,
           "width": 24,
@@ -1653,7 +1653,7 @@
   "filters_bar_collapsed": false,
   "filters_location_top": true,
   "last_accessed_at": "2026-01-28 22:51:03 UTC",
-  "updated_at": "2026-01-29 01:24:45 UTC",
+  "updated_at": "2026-01-29 05:39:32 UTC",
   "last_updater_id": "1",
   "load_configuration": "cache_run",
   "lookml_link_id": "external_data_model::data_security_shared_template_dashboard",
