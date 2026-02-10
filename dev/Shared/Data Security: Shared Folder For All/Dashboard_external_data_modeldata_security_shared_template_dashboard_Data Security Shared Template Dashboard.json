@@ -1611,7 +1611,7 @@
   ],
   "dashboard_layouts": [
     {
-      "id": "a0d51393-5e29-45a0-89b2-0403d82cc2a9",
+      "id": "4dfe8bff-7f3c-458d-a870-cbeff7e94294",
       "dashboard_id": "external_data_model::data_security_shared_template_dashboard",
       "type": "newspaper",
       "active": true,
