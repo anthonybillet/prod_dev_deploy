@@ -73,20 +73,72 @@
           "label_density": 25,
           "x_axis_scale": "auto",
           "y_axis_combined": true,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "color_application": {
+            "collection_id": "7c56cc21-66e4-41c9-81ce-a60e1c3967b2",
+            "palette_id": "5d189dfc-4f46-46f3-822b-bfb0b61777b1",
+            "options": {
+              "steps": 5
+            },
+            "collection_default": true,
+            "collection_label": "Shoreline",
+            "palette_label": "Mixed categorical",
+            "palette_type": "Categorical",
+            "palette_colors": [
+              "#1A73E8",
+              "#12B5CB",
+              "#E52592",
+              "#E8710A",
+              "#F9AB00",
+              "#7CB342",
+              "#9334E6",
+              "#80868B",
+              "#079c98",
+              "#A8A116",
+              "#EA4335",
+              "#FF8168"
+            ]
+          },
+          "x_axis_zoom": true,
+          "y_axis_zoom": true,
+          "series_types": {
+          },
+          "series_colors": {
+            "order_items.total_sale_price": "#E52592"
+          },
           "show_null_points": true,
           "interpolation": "linear",
-          "type": "looker_line",
+          "type": "looker_column",
           "defaults_version": 1
         },
-        "filter_config": null,
+        "filter_config": {
+          "order_items.created_date": [
+            {
+              "type": "past",
+              "values": [
+                {
+                  "constant": "365",
+                  "unit": "day"
+                },
+                {
+                }
+              ],
+              "id": 1
+            }
+          ]
+        },
         "visible_ui_sections": null,
-        "slug": "4czcBJGPdQyyJHjq5dzYT56xYHs7s3BN",
-        "client_id": "Hgk0pDdTkTx0F4tLWMBIeA",
-        "share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/x/Hgk0pDdTkTx0F4tLWMBIeA",
-        "expanded_share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_line%22%2C%22defaults_version%22%3A1%7D&origin=share-expanded",
-        "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_line%22%2C%22defaults_version%22%3A1%7D",
+        "slug": "XQZzyYm4DrnKrVsJtSNxmyvSPy2DwmKf",
+        "client_id": "7J7CREXACpy18k1sF9ZnsV",
+        "share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/x/7J7CREXACpy18k1sF9ZnsV",
+        "expanded_share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22color_application%22%3A%7B%22collection_id%22%3A%227c56cc21-66e4-41c9-81ce-a60e1c3967b2%22%2C%22palette_id%22%3A%225d189dfc-4f46-46f3-822b-bfb0b61777b1%22%2C%22options%22%3A%7B%22steps%22%3A5%7D%7D%2C%22x_axis_zoom%22%3Atrue%2C%22y_axis_zoom%22%3Atrue%2C%22series_types%22%3A%7B%7D%2C%22series_colors%22%3A%7B%22order_items.total_sale_price%22%3A%22%23E52592%22%7D%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D&origin=share-expanded",
+        "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22color_application%22%3A%7B%22collection_id%22%3A%227c56cc21-66e4-41c9-81ce-a60e1c3967b2%22%2C%22palette_id%22%3A%225d189dfc-4f46-46f3-822b-bfb0b61777b1%22%2C%22options%22%3A%7B%22steps%22%3A5%7D%7D%2C%22x_axis_zoom%22%3Atrue%2C%22y_axis_zoom%22%3Atrue%2C%22series_types%22%3A%7B%7D%2C%22series_colors%22%3A%7B%22order_items.total_sale_price%22%3A%22%23E52592%22%7D%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D",
         "has_table_calculations": false,
-        "id": "4czcBJGPdQyyJHjq5dzYT56xYHs7s3BN",
+        "id": "XQZzyYm4DrnKrVsJtSNxmyvSPy2DwmKf",
         "model": "external_data_model",
         "limit": "500",
         "column_limit": "50",
@@ -121,7 +173,7 @@
       },
       "refresh_interval": null,
       "refresh_interval_to_i": null,
-      "result_maker_id": "193",
+      "result_maker_id": "210",
       "subtitle_text": null,
       "title": "Daily Sales",
       "title_hidden": false,
@@ -133,9 +185,9 @@
       "subtitle_text_as_html": null,
       "extension_id": null,
       "aria_description": null,
-      "query_id": "4czcBJGPdQyyJHjq5dzYT56xYHs7s3BN",
+      "query_id": "XQZzyYm4DrnKrVsJtSNxmyvSPy2DwmKf",
       "result_maker": {
-        "id": "193",
+        "id": "210",
         "dynamic_fields": null,
         "sorts": [
           "order_items.created_date desc"
@@ -186,20 +238,54 @@
             "label_density": 25,
             "x_axis_scale": "auto",
             "y_axis_combined": true,
+            "ordering": "none",
+            "show_null_labels": false,
+            "show_totals_labels": false,
+            "show_silhouette": false,
+            "totals_color": "#808080",
+            "color_application": {
+              "collection_id": "7c56cc21-66e4-41c9-81ce-a60e1c3967b2",
+              "palette_id": "5d189dfc-4f46-46f3-822b-bfb0b61777b1",
+              "options": {
+                "steps": 5
+              }
+            },
+            "x_axis_zoom": true,
+            "y_axis_zoom": true,
+            "series_types": {
+            },
+            "series_colors": {
+              "order_items.total_sale_price": "#E52592"
+            },
             "show_null_points": true,
             "interpolation": "linear",
-            "type": "looker_line",
+            "type": "looker_column",
             "defaults_version": 1
           },
-          "filter_config": null,
+          "filter_config": {
+            "order_items.created_date": [
+              {
+                "type": "past",
+                "values": [
+                  {
+                    "constant": "365",
+                    "unit": "day"
+                  },
+                  {
+                  }
+                ],
+                "id": 1
+              }
+            ]
+          },
           "visible_ui_sections": null,
-          "slug": "4czcBJGPdQyyJHjq5dzYT56xYHs7s3BN",
-          "client_id": "Hgk0pDdTkTx0F4tLWMBIeA",
-          "share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/x/Hgk0pDdTkTx0F4tLWMBIeA",
-          "expanded_share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_line%22%2C%22defaults_version%22%3A1%7D&origin=share-expanded",
-          "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_line%22%2C%22defaults_version%22%3A1%7D",
+          "slug": "XQZzyYm4DrnKrVsJtSNxmyvSPy2DwmKf",
+          "client_id": "7J7CREXACpy18k1sF9ZnsV",
+          "share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/x/7J7CREXACpy18k1sF9ZnsV",
+          "expanded_share_url": "https://94c3b936-2ffc-4d7e-a07a-d0d35f349b32.looker.app/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22color_application%22%3A%7B%22collection_id%22%3A%227c56cc21-66e4-41c9-81ce-a60e1c3967b2%22%2C%22palette_id%22%3A%225d189dfc-4f46-46f3-822b-bfb0b61777b1%22%2C%22options%22%3A%7B%22steps%22%3A5%7D%7D%2C%22x_axis_zoom%22%3Atrue%2C%22y_axis_zoom%22%3Atrue%2C%22series_types%22%3A%7B%7D%2C%22series_colors%22%3A%7B%22order_items.total_sale_price%22%3A%22%23E52592%22%7D%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D&origin=share-expanded",
+          "url": "/explore/external_data_model/order_items?fields=order_items.total_sale_price,order_items.created_date&fill_fields=order_items.created_date&f[order_items.created_date]=365+days&sorts=order_items.created_date+desc&limit=500&column_limit=50&vis=%7B%22x_axis_gridlines%22%3Afalse%2C%22y_axis_gridlines%22%3Atrue%2C%22show_view_names%22%3Afalse%2C%22show_y_axis_labels%22%3Atrue%2C%22show_y_axis_ticks%22%3Atrue%2C%22y_axis_tick_density%22%3A%22default%22%2C%22y_axis_tick_density_custom%22%3A5%2C%22show_x_axis_label%22%3Atrue%2C%22show_x_axis_ticks%22%3Atrue%2C%22y_axis_scale_mode%22%3A%22linear%22%2C%22x_axis_reversed%22%3Afalse%2C%22y_axis_reversed%22%3Afalse%2C%22plot_size_by_field%22%3Afalse%2C%22trellis%22%3A%22%22%2C%22stacking%22%3A%22%22%2C%22limit_displayed_rows%22%3Afalse%2C%22legend_position%22%3A%22center%22%2C%22point_style%22%3A%22none%22%2C%22show_value_labels%22%3Afalse%2C%22label_density%22%3A25%2C%22x_axis_scale%22%3A%22auto%22%2C%22y_axis_combined%22%3Atrue%2C%22ordering%22%3A%22none%22%2C%22show_null_labels%22%3Afalse%2C%22show_totals_labels%22%3Afalse%2C%22show_silhouette%22%3Afalse%2C%22totals_color%22%3A%22%23808080%22%2C%22color_application%22%3A%7B%22collection_id%22%3A%227c56cc21-66e4-41c9-81ce-a60e1c3967b2%22%2C%22palette_id%22%3A%225d189dfc-4f46-46f3-822b-bfb0b61777b1%22%2C%22options%22%3A%7B%22steps%22%3A5%7D%7D%2C%22x_axis_zoom%22%3Atrue%2C%22y_axis_zoom%22%3Atrue%2C%22series_types%22%3A%7B%7D%2C%22series_colors%22%3A%7B%22order_items.total_sale_price%22%3A%22%23E52592%22%7D%2C%22show_null_points%22%3Atrue%2C%22interpolation%22%3A%22linear%22%2C%22type%22%3A%22looker_column%22%2C%22defaults_version%22%3A1%7D&filter_config=%7B%22order_items.created_date%22%3A%5B%7B%22type%22%3A%22past%22%2C%22values%22%3A%5B%7B%22constant%22%3A%22365%22%2C%22unit%22%3A%22day%22%7D%2C%7B%7D%5D%2C%22id%22%3A1%7D%5D%7D",
           "has_table_calculations": false,
-          "id": "4czcBJGPdQyyJHjq5dzYT56xYHs7s3BN",
+          "id": "XQZzyYm4DrnKrVsJtSNxmyvSPy2DwmKf",
           "model": "external_data_model",
           "limit": "500",
           "column_limit": "50",
@@ -255,9 +341,46 @@
           "label_density": 25,
           "x_axis_scale": "auto",
           "y_axis_combined": true,
+          "ordering": "none",
+          "show_null_labels": false,
+          "show_totals_labels": false,
+          "show_silhouette": false,
+          "totals_color": "#808080",
+          "color_application": {
+            "collection_id": "7c56cc21-66e4-41c9-81ce-a60e1c3967b2",
+            "palette_id": "5d189dfc-4f46-46f3-822b-bfb0b61777b1",
+            "options": {
+              "steps": 5
+            },
+            "collection_default": true,
+            "collection_label": "Shoreline",
+            "palette_label": "Mixed categorical",
+            "palette_type": "Categorical",
+            "palette_colors": [
+              "#1A73E8",
+              "#12B5CB",
+              "#E52592",
+              "#E8710A",
+              "#F9AB00",
+              "#7CB342",
+              "#9334E6",
+              "#80868B",
+              "#079c98",
+              "#A8A116",
+              "#EA4335",
+              "#FF8168"
+            ]
+          },
+          "x_axis_zoom": true,
+          "y_axis_zoom": true,
+          "series_types": {
+          },
+          "series_colors": {
+            "order_items.total_sale_price": "#E52592"
+          },
           "show_null_points": true,
           "interpolation": "linear",
-          "type": "looker_line",
+          "type": "looker_column",
           "defaults_version": 1
         },
         "filterables": [
@@ -277,7 +400,7 @@
             ]
           }
         ],
-        "query_id": "4czcBJGPdQyyJHjq5dzYT56xYHs7s3BN"
+        "query_id": "XQZzyYm4DrnKrVsJtSNxmyvSPy2DwmKf"
       },
       "can": {
         "can_clear_cache": true,
@@ -4179,7 +4302,7 @@
           "deleted": false,
           "element_title": "Daily Sales",
           "element_title_hidden": false,
-          "vis_type": "looker_line",
+          "vis_type": "looker_column",
           "granular_row": null,
           "granular_column": null,
           "granular_width": null,
@@ -4332,8 +4455,8 @@
   "favorite_count": 0,
   "filters_bar_collapsed": false,
   "filters_location_top": true,
-  "last_accessed_at": "2026-02-09 17:46:43 UTC",
-  "updated_at": "2026-01-30 18:55:30 UTC",
+  "last_accessed_at": "2026-02-17 18:12:01 UTC",
+  "updated_at": "2026-02-17 18:13:22 UTC",
   "last_updater_id": "1",
   "load_configuration": "cache_run",
   "lookml_link_id": "external_data_model::data_security_shared_template_dashboard",
@@ -4343,9 +4466,8 @@
   "tile_background_color": null,
   "tile_text_color": null,
   "title_color": null,
-  "view_count": 6,
+  "view_count": 7,
   "url": "/dashboards/dmvwX7CaIpAbqhZTOXZhcc",
-  "layout_granularity": null,
   "folder": {
     "name": "Data Security: Shared Folder For All",
     "parent_id": "1",
@@ -4380,7 +4502,7 @@
   "model": null,
   "certification_metadata": null,
   "deleted": false,
-  "last_viewed_at": "2026-02-09 17:47:33 UTC",
+  "last_viewed_at": "2026-02-17 18:12:17 UTC",
   "last_updater_name": "Super Admin",
   "user_name": "Super Admin",
   "appearance": null,
