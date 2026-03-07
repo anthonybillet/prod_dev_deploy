@@ -21,7 +21,7 @@
       "dashboard_id": "78",
       "dashboard_layout_id": null,
       "edit_uri": null,
-      "id": "652",
+      "id": "661",
       "look": null,
       "look_id": null,
       "lookml_link_id": "",
@@ -334,6 +334,7 @@
         ],
         "query_id": "XqjnQXRP2ztQ42YHCzv3th2KcPjShfxC"
       },
+      "certification_metadata": null,
       "can": {
         "can_clear_cache": true,
         "create": true,
@@ -357,7 +358,7 @@
       "dashboard_id": "78",
       "dashboard_layout_id": null,
       "edit_uri": null,
-      "id": "653",
+      "id": "662",
       "look": null,
       "look_id": null,
       "lookml_link_id": "",
@@ -877,6 +878,7 @@
         ],
         "query_id": "BpZtZtRRjXyc5WwDVH2s82TyP3yMDBQt"
       },
+      "certification_metadata": null,
       "can": {
         "can_clear_cache": true,
         "create": true,
@@ -900,7 +902,7 @@
       "dashboard_id": "78",
       "dashboard_layout_id": null,
       "edit_uri": null,
-      "id": "654",
+      "id": "663",
       "look": null,
       "look_id": null,
       "lookml_link_id": "",
@@ -1325,6 +1327,7 @@
         ],
         "query_id": "CtQqR67gwJ62f52t4DjYBvZKgjpD2Rh6"
       },
+      "certification_metadata": null,
       "can": {
         "can_clear_cache": true,
         "create": true,
@@ -1345,7 +1348,7 @@
   ],
   "dashboard_filters": [
     {
-      "id": "210",
+      "id": "214",
       "dashboard_id": "78",
       "name": "Created Date",
       "title": "Created Date",
@@ -1450,7 +1453,7 @@
       }
     },
     {
-      "id": "211",
+      "id": "215",
       "dashboard_id": "78",
       "name": "Brand",
       "title": "Brand",
@@ -1561,9 +1564,9 @@
       "dashboard_title": "Spinoff Dashboard",
       "dashboard_layout_components": [
         {
-          "id": "652",
+          "id": "661",
           "dashboard_layout_id": "78",
-          "dashboard_element_id": "652",
+          "dashboard_element_id": "661",
           "row": 0,
           "column": 8,
           "width": 16,
@@ -1585,9 +1588,9 @@
           }
         },
         {
-          "id": "653",
+          "id": "662",
           "dashboard_layout_id": "78",
-          "dashboard_element_id": "653",
+          "dashboard_element_id": "662",
           "row": 0,
           "column": 0,
           "width": 8,
@@ -1609,9 +1612,9 @@
           }
         },
         {
-          "id": "654",
+          "id": "663",
           "dashboard_layout_id": "78",
-          "dashboard_element_id": "654",
+          "dashboard_element_id": "663",
           "row": 7,
           "column": 0,
           "width": 24,
@@ -1653,7 +1656,7 @@
   "filters_bar_collapsed": false,
   "filters_location_top": true,
   "last_accessed_at": "2026-01-28 22:51:03 UTC",
-  "updated_at": "2026-02-17 18:18:41 UTC",
+  "updated_at": "2026-02-18 05:57:22 UTC",
   "last_updater_id": "1",
   "load_configuration": "cache_run",
   "lookml_link_id": "external_data_model::data_security_shared_template_dashboard",
@@ -1703,6 +1706,7 @@
   "last_updater_name": "Super Admin",
   "user_name": "Super Admin",
   "appearance": null,
+  "download_settings": null,
   "can": {
     "certify": true,
     "copy": true,

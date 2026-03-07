@@ -440,6 +440,7 @@
         ],
         "query_id": "GtphgjP4DpCGmRTQhbxsXYvyxDjXX8wq"
       },
+      "certification_metadata": null,
       "can": {
         "can_clear_cache": true,
         "create": true,
@@ -723,6 +724,7 @@
         ],
         "query_id": "tr8fH7mVXyvwnfXs8cMS6pjRsYSSHRRS"
       },
+      "certification_metadata": null,
       "can": {
         "can_clear_cache": true,
         "create": true,
@@ -874,6 +876,7 @@
   "last_updater_name": "Super Admin",
   "user_name": "Super Admin",
   "appearance": null,
+  "download_settings": null,
   "can": {
     "certify": true,
     "copy": true,

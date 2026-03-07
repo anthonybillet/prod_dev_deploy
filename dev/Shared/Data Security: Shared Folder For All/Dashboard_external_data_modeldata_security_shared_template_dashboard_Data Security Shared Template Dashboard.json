@@ -191,6 +191,7 @@
         ],
         "query_id": "BWBWyK2b6HZJNYxsbYRWr7mywvP6xZRX"
       },
+      "certification_metadata": null,
       "can": {
         "explore": true,
         "see_aggregate_table_lookml": true
@@ -393,6 +394,7 @@
         ],
         "query_id": "fVcpNVrrCVpZPZDWDXGCtYBhQVShZS3f"
       },
+      "certification_metadata": null,
       "can": {
         "explore": true,
         "see_aggregate_table_lookml": true
@@ -662,6 +664,7 @@
         ],
         "query_id": "WYJhmtBpTHXgjxqHVdJsY4RJfFTYzJ8D"
       },
+      "certification_metadata": null,
       "can": {
         "explore": true,
         "see_aggregate_table_lookml": true
@@ -881,6 +884,7 @@
         ],
         "query_id": "jJTs6RBdp5wz82dtSmqWvx7NZqqJB7rM"
       },
+      "certification_metadata": null,
       "can": {
         "explore": true,
         "see_aggregate_table_lookml": true
@@ -1228,6 +1232,7 @@
         ],
         "query_id": "dW2TvmpCfxDp33mNyXhWWs7g4gqstGyQ"
       },
+      "certification_metadata": null,
       "can": {
         "explore": true,
         "see_aggregate_table_lookml": true
@@ -1408,6 +1413,7 @@
         ],
         "query_id": "n4HvvdZfKxj8nMQrGxXk4nnX6JpyysKX"
       },
+      "certification_metadata": null,
       "can": {
         "explore": true,
         "see_aggregate_table_lookml": true
@@ -1611,7 +1617,7 @@
   ],
   "dashboard_layouts": [
     {
-      "id": "81e35712-e35e-4afb-9378-c89da6603dab",
+      "id": "150f2588-5c75-4d09-9bc5-aebbdbb4aac9",
       "dashboard_id": "external_data_model::data_security_shared_template_dashboard",
       "type": "newspaper",
       "active": true,
@@ -1803,8 +1809,9 @@
   "last_updater_name": "",
   "user_name": "",
   "appearance": null,
+  "download_settings": null,
   "can": {
-    "certify": false,
+    "certify": true,
     "download": true,
     "import": true,
     "index": true,

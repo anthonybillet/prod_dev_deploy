@@ -334,6 +334,7 @@
         ],
         "query_id": "rkjgpMCwrfcHwjcc4QP3yjKbkVdbdbYK"
       },
+      "certification_metadata": null,
       "can": {
         "can_clear_cache": true,
         "create": true,
@@ -877,6 +878,7 @@
         ],
         "query_id": "mc8zV22tYgq724sThrg8zGPkJTC7DQBb"
       },
+      "certification_metadata": null,
       "can": {
         "can_clear_cache": true,
         "create": true,
@@ -1325,6 +1327,7 @@
         ],
         "query_id": "mk8VVkJSc62bDtBW4nXCg8ZQJyCBZdTv"
       },
+      "certification_metadata": null,
       "can": {
         "can_clear_cache": true,
         "create": true,
@@ -1703,6 +1706,7 @@
   "last_updater_name": "Super Admin",
   "user_name": "Super Admin",
   "appearance": null,
+  "download_settings": null,
   "can": {
     "certify": true,
     "copy": true,
