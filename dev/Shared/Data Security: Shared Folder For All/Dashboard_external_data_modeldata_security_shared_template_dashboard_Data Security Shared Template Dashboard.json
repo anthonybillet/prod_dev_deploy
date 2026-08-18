@@ -16,7 +16,7 @@
   "crossfilter_enabled": true,
   "dashboard_filters": [
     {
-      "id": "6be9d4ebd103f265fca4eef8d461b75a",
+      "id": "Created Date",
       "dashboard_id": "external_data_model::data_security_shared_template_dashboard",
       "name": "Created Date",
       "title": "Created Date",
@@ -93,6 +93,7 @@
         "suggest_dimension": "order_items.created_date",
         "suggest_explore": "order_items",
         "suggestable": false,
+        "liquid_expression": null,
         "lookml_expression": null,
         "is_fiscal": false,
         "is_timeframe": true,
@@ -115,7 +116,7 @@
       }
     },
     {
-      "id": "76e7b8c381e9d7ecd9c3c9d29c5f4995",
+      "id": "Brand",
       "dashboard_id": "external_data_model::data_security_shared_template_dashboard",
       "name": "Brand",
       "title": "Brand",
@@ -189,6 +190,7 @@
         "suggest_dimension": "products.brand",
         "suggest_explore": "order_items",
         "suggestable": true,
+        "liquid_expression": null,
         "lookml_expression": null,
         "is_fiscal": false,
         "is_timeframe": false,
@@ -1682,7 +1684,7 @@
   ],
   "dashboard_layouts": [
     {
-      "id": "74e2243a-8082-4050-982d-b6ceb65edb39",
+      "id": "e111b8b0-9319-4c8b-85d3-661a1a5839a6",
       "dashboard_id": "external_data_model::data_security_shared_template_dashboard",
       "type": "newspaper",
       "active": true,
@@ -1823,7 +1825,7 @@
   "is_owner_disabled": false,
   "theme_name": null,
   "layout_granularity": null,
-  "preserve_desktop_layout": false,
+  "tile_filter_information": "",
   "download_settings": null,
   "unused_content_schedule": null,
   "can": {
